@@ -23,6 +23,7 @@
         "drupal/addtoany": "^1.11",
         "drupal/admin_toolbar": "^1.26",
         "drupal/console": "^1.0.2",
+        "drupal/contact_storage": "^1.0",
         "drupal/core": "^8.6.0",
         "drupal/devel": "^2.0",
         "drupal/entity_reference_revisions": "^1.6",

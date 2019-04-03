@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_what_is_bitcoin
+    - field.field.node.page.field_images_para
+    - field.field.node.page.field_para_icon
+    - field.field.node.page.field_para_service
     - node.type.page
     - field.field.node.page.field_slider
   module:
@@ -26,15 +29,36 @@ content:
   field_slider:
     type: entity_reference_revisions_entity_view
     weight: 102
+  field_what_is_bitcoin:
+    type: entity_reference_revisions_entity_view
+    weight: 102
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  field_what_is_bitcoin:
+  field_images_para:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_para_icon:
     type: entity_reference_revisions_entity_view
     weight: 102
-    label: hidden
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_para_service:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
     settings:
       view_mode: default
       link: ''
