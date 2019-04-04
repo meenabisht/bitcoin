@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_images_para
+    - field.field.node.page.field_para_icon
+    - field.field.node.page.field_para_service
+    - field.field.node.page.field_slider
     - field.field.node.page.field_what_is_bitcoin
     - node.type.page
-    - field.field.node.page.field_slider
   module:
     - entity_reference_revisions
-    - text
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -22,7 +24,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_slider:
     type: entity_reference_revisions_entity_view
     weight: 102
@@ -31,6 +32,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
   field_what_is_bitcoin:
     type: entity_reference_revisions_entity_view
     weight: 102
@@ -45,4 +47,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_images_para: true
+  field_para_icon: true
+  field_para_service: true

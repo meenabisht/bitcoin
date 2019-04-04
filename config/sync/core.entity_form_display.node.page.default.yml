@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_what_is_bitcoin
+    - field.field.node.page.field_images_para
+    - field.field.node.page.field_para_icon
+    - field.field.node.page.field_para_service
     - field.field.node.page.field_slider
+    - field.field.node.page.field_what_is_bitcoin
     - node.type.page
   module:
     - paragraphs
@@ -22,7 +25,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_what_is_bitcoin:
+  field_slider:
     type: entity_reference_paragraphs
     weight: 121
     settings:
@@ -34,7 +37,7 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_slider:
+  field_what_is_bitcoin:
     type: entity_reference_paragraphs
     weight: 121
     settings:
@@ -90,4 +93,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_images_para: true
+  field_para_icon: true
+  field_para_service: true
