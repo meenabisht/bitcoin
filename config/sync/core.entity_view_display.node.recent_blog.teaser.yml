@@ -29,3 +29,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_news_blog: true
