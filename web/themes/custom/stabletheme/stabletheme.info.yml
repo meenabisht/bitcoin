@@ -9,10 +9,11 @@ package: 'stable'
 regions:
   header: Header
   primary_menu: 'Primary menu'
-  featured_top: 'Featured top'
-  content: Content
-  footer_first: 'Footer first'
-  footer_second: 'Footer second'
+  banner_top: 'Banner top'
+  content: 'Content'
+  banner_bottom : 'Banner bottom'
+  footer-primary: 'Footer first'
+  footer_secondry: 'Footer second'
 
 libraries:
   - 'stablesubtheme/global-styling'

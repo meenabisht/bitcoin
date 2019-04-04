@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.scss","base/variables.scss"],"names":[],"mappings":"AAEA,KACE,eCHQ,CDIR,SCHS,CDIV,EAEE,iCAAY,CAAZ,yBAA0B","file":"styles.css","sourcesContent":["@import 'base/variables.scss';\n\nbody{\n  background: $bg;\n  color: $red;\n}\na{\n   transition: all 320ms ease;\n}","$bg : #ccc;\n$red : #f00;\n"]}
