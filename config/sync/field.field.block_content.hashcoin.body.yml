@@ -1,0 +1,22 @@
+uuid: 39f8c388-d10a-4d34-8850-518fd75cd0f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hashcoin
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.hashcoin.body
+field_name: body
+entity_type: block_content
+bundle: hashcoin
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

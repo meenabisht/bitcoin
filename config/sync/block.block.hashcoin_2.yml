@@ -1,0 +1,25 @@
+uuid: 16f12721-b07b-4a6e-9ed7-1e6d80bd8588
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hashcoin:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
+  module:
+    - block_content
+  theme:
+    - stabletheme
+id: hashcoin_2
+theme: stabletheme
+region: footer_primary
+weight: 1
+provider: null
+plugin: 'block_content:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
+settings:
+  id: 'block_content:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
+  label: 'Hash Coin'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

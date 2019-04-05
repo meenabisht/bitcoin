@@ -1,0 +1,61 @@
+uuid: f0ac34b9-9299-40a7-af3f-0812ca9b6c80
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hashcoin
+    - field.field.block_content.hashcoin.body
+    - field.field.block_content.hashcoin.field_addre
+    - field.field.block_content.hashcoin.field_fooimage
+    - field.field.block_content.hashcoin.field_title
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.hashcoin.default
+targetEntityType: block_content
+bundle: hashcoin
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_addre:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_fooimage:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

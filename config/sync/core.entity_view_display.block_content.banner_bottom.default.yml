@@ -1,0 +1,24 @@
+uuid: 12d44e2f-6084-4044-803c-20629276f42c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_bottom
+    - field.field.block_content.banner_bottom.field_banner_ima
+  module:
+    - image
+id: block_content.banner_bottom.default
+targetEntityType: block_content
+bundle: banner_bottom
+mode: default
+content:
+  field_banner_ima:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

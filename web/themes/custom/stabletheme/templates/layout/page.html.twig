@@ -44,37 +44,41 @@
  */
 #}
 <div class="layout-container">
-
-  <header role="banner">
+  {# {{ kint(page.content.stabletheme_content) }} #}
+  <header class="header">
     {{ page.header }}
   </header>
 
+  <div class = "menu">
   {{ page.primary_menu }}
+  </div>
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  {% if page.banner_top %}
+    <div class="slider">
+      {{ page.banner_top }}
+    </div>
+  {% endif %}
+
+  <main class="main">
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}    
-
+    </div>{# /.layout-content #}
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
+  <div class="banner-bottom">
+      {{ page.banner_bottom }}
+    </div>{# /.layout-content #}
+
+  {% if page.footer_primary %}
+    <footer class="footer-primary">
+      {{ page.footer_primary }}
     </footer>
   {% endif %}
 
-  {% if page.footer_first %}
-    <footer role="contentinfo">
-      {{ page.footer_first }}
-    </footer>
-  {% endif %}
-
-  {% if page.footer_second %}
-    <footer role="contentinfo">
-      {{ page.footer_second }}
+  {% if page.footer_secondry %}
+    <footer class="footer-secondry">
+      {{ page.footer_secondry }}
     </footer>
   {% endif %}
 </div>{# /.layout-container #}
