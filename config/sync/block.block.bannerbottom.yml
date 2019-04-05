@@ -1,0 +1,25 @@
+uuid: 80b99f6e-b88f-42b1-8a4f-ce9a8422ad8c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_bottom:8bf1e09a-4f07-47a5-bdef-fe31b205fbb9'
+  module:
+    - block_content
+  theme:
+    - stabletheme
+id: bannerbottom
+theme: stabletheme
+region: banner_bottom
+weight: 0
+provider: null
+plugin: 'block_content:8bf1e09a-4f07-47a5-bdef-fe31b205fbb9'
+settings:
+  id: 'block_content:8bf1e09a-4f07-47a5-bdef-fe31b205fbb9'
+  label: 'banner bottom'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

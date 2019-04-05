@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.newsletter
-    - field.field.block_content.newsletter.body
     - field.field.block_content.newsletter.field_description
-    - field.field.block_content.newsletter.field_heading
   module:
     - text
 id: block_content.newsletter.default
@@ -14,15 +12,6 @@ targetEntityType: block_content
 bundle: newsletter
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 26
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_description:
     weight: 28
     settings:
@@ -30,14 +19,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_heading:
-    weight: 27
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
     region: content
   info:
     type: string_textfield

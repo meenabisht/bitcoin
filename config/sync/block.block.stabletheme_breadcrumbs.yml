@@ -1,6 +1,6 @@
 uuid: c13b5fa9-6a35-49dd-b176-c51a4543e07b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: stabletheme_breadcrumbs
 theme: stabletheme
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
