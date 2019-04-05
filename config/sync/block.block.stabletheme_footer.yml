@@ -1,6 +1,6 @@
 uuid: a46a09c9-332f-4cc7-86f9-dfc6d36d27e5
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: stabletheme_footer
 theme: stabletheme
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

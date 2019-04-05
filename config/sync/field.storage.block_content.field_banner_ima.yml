@@ -1,14 +1,14 @@
-uuid: 4ee91d09-c3e0-4468-a7f9-4348c3613d2b
+uuid: 43d45581-4dee-4606-b243-ff5e41db263a
 langcode: en
 status: true
 dependencies:
   module:
+    - block_content
     - file
     - image
-    - paragraphs
-id: paragraph.field_hash_coin_image
-field_name: field_hash_coin_image
-entity_type: paragraph
+id: block_content.field_banner_ima
+field_name: field_banner_ima
+entity_type: block_content
 type: image
 settings:
   uri_scheme: public
@@ -23,7 +23,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

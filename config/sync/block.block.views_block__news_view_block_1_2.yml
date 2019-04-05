@@ -1,4 +1,4 @@
-uuid: 9de4190f-619e-4b4c-94ae-6278c5942aeb
+uuid: e0e17159-b0c0-4bb3-9fc2-1bb5464847ef
 langcode: en
 status: true
 dependencies:
@@ -9,24 +9,24 @@ dependencies:
     - views
   theme:
     - stabletheme
-id: stabletheme_views_block__news_view_block_1
+id: views_block__news_view_block_1_2
 theme: stabletheme
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: 'views_block:news_view-block_1'
 settings:
   id: 'views_block:news_view-block_1'
-  label: 'Our Blog'
+  label: ''
   provider: views
   label_display: visible
-  views_label: 'Our Blog'
+  views_label: ''
   items_per_page: none
 visibility:
   node_type:
     id: node_type
     bundles:
-      testimonials: testimonials
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

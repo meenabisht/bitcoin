@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_images_para
+    - field.field.node.page.field_free
     - field.field.node.page.field_para_icon
     - field.field.node.page.field_para_service
     - field.field.node.page.field_slider
@@ -12,6 +12,7 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
+    - webform
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -24,9 +25,35 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_free:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_para_icon:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_para_service:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_slider:
     type: entity_reference_revisions_entity_view
-    weight: 102
+    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -35,7 +62,7 @@ content:
     region: content
   field_what_is_bitcoin:
     type: entity_reference_revisions_entity_view
-    weight: 102
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -43,11 +70,8 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 101
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_images_para: true
-  field_para_icon: true
-  field_para_service: true
+hidden: {  }

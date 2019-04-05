@@ -1,17 +1,17 @@
-uuid: d3bc6822-5fd8-4f96-9a69-701ee51552cb
+uuid: 54d2ba8a-f1a5-4f7a-8514-b2eac1818a77
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_hash_coin_image
-    - paragraphs.paragraphs_type.hash_coin
+    - block_content.type.hashcoin
+    - field.storage.block_content.field_fooimage
   module:
     - image
-id: paragraph.hash_coin.field_hash_coin_image
-field_name: field_hash_coin_image
-entity_type: paragraph
-bundle: hash_coin
-label: 'Hash Coin Image'
+id: block_content.hashcoin.field_fooimage
+field_name: field_fooimage
+entity_type: block_content
+bundle: hashcoin
+label: FooterImage
 description: ''
 required: false
 translatable: false

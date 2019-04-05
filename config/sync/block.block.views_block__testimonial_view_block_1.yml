@@ -1,32 +1,32 @@
-uuid: 9de4190f-619e-4b4c-94ae-6278c5942aeb
+uuid: 22ebe1c3-6062-4ce1-8e15-e520b9cd561d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_view
+    - views.view.testimonial_view
   module:
     - node
     - views
   theme:
     - stabletheme
-id: stabletheme_views_block__news_view_block_1
+id: views_block__testimonial_view_block_1
 theme: stabletheme
 region: content
-weight: -2
+weight: 0
 provider: null
-plugin: 'views_block:news_view-block_1'
+plugin: 'views_block:testimonial_view-block_1'
 settings:
-  id: 'views_block:news_view-block_1'
-  label: 'Our Blog'
+  id: 'views_block:testimonial_view-block_1'
+  label: ''
   provider: views
   label_display: visible
-  views_label: 'Our Blog'
+  views_label: ''
   items_per_page: none
 visibility:
   node_type:
     id: node_type
     bundles:
-      testimonials: testimonials
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

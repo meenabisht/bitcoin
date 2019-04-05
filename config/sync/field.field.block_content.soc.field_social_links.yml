@@ -18,24 +18,24 @@ translatable: false
 default_value:
   -
     icon_name: facebook-f
+    settings: 'a:5:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:4:"pull";s:12:"fa-pull-left";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
-    settings: 'a:4:{s:11:"fixed-width";s:5:"fa-fw";s:4:"pull";s:12:"fa-pull-left";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
   -
     icon_name: twitter
+    settings: 'a:4:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
-    settings: 'a:3:{s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
   -
     icon_name: google-plus
+    settings: 'a:4:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
-    settings: 'a:3:{s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
   -
     icon_name: linkedin-in
+    settings: 'a:4:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
-    settings: 'a:3:{s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
   -
     icon_name: youtube
+    settings: 'a:4:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
-    settings: 'a:3:{s:11:"fixed-width";s:5:"fa-fw";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
 default_value_callback: ''
 settings: {  }
 field_type: fontawesome_icon

@@ -44,7 +44,6 @@
  */
 #}
 <div class="layout-container">
-
   <header class="header">
     {{ page.header }}
   </header>
@@ -64,11 +63,11 @@
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}
+  </main>
 
   <div class="banner-bottom">
-      {{ banner_bottom }}
+      {{ page.banner_bottom }}
     </div>{# /.layout-content #}
-  </main>
 
   {% if page.footer_primary %}
     <footer class="footer-primary">
@@ -76,7 +75,7 @@
     </footer>
   {% endif %}
 
-  {% if page.footer_second %}
+  {% if page.footer_secondry %}
     <footer class="footer-secondry">
       {{ page.footer_secondry }}
     </footer>

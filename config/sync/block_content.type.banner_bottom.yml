@@ -1,0 +1,8 @@
+uuid: 86fba3b2-aee2-4893-ba6f-7d9e99dd19b9
+langcode: en
+status: true
+dependencies: {  }
+id: banner_bottom
+label: 'Banner Bottom'
+revision: 0
+description: ''

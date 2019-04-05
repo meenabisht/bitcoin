@@ -1,17 +1,17 @@
-uuid: 28cfd7ac-5604-4686-85b5-ff1289e25055
+uuid: d3aa38d7-108b-44f6-8f7f-d81c1f411c48
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_images
-    - paragraphs.paragraphs_type.images
+    - block_content.type.banner_bottom
+    - field.storage.block_content.field_banner_ima
   module:
     - image
-id: paragraph.images.field_images
-field_name: field_images
-entity_type: paragraph
-bundle: images
-label: Images
+id: block_content.banner_bottom.field_banner_ima
+field_name: field_banner_ima
+entity_type: block_content
+bundle: banner_bottom
+label: 'Banner image'
 description: ''
 required: false
 translatable: false

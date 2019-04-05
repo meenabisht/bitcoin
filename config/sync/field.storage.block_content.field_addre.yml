@@ -1,19 +1,18 @@
-uuid: de443596-2f72-4f26-be6f-fc6799e1c8b4
+uuid: 035d4643-13ed-4eec-a527-a0091de045cb
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - text
-id: block_content.field_heading
-field_name: field_heading
+id: block_content.field_addre
+field_name: field_addre
 entity_type: block_content
-type: text
+type: string_long
 settings:
-  max_length: 255
-module: text
+  case_sensitive: false
+module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,16 +1,16 @@
-uuid: 09915d76-f8c1-46bd-845b-24b24c289240
+uuid: 39f8c388-d10a-4d34-8850-518fd75cd0f6
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hash_coin
+    - block_content.type.hashcoin
     - field.storage.block_content.body
   module:
     - text
-id: block_content.hash_coin.body
+id: block_content.hashcoin.body
 field_name: body
 entity_type: block_content
-bundle: hash_coin
+bundle: hashcoin
 label: Body
 description: ''
 required: false
