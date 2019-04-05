@@ -1,6 +1,6 @@
 uuid: 22ebe1c3-6062-4ce1-8e15-e520b9cd561d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.testimonial_view

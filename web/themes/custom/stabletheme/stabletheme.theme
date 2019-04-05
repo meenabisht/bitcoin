@@ -1,0 +1,36 @@
+<?php
+
+function stabletheme_preprocess_node(&$variables) {
+    // // kint('test');
+    // // kint($variables['page']['content']['stabletheme_content']['#block']->get());
+    // // exit();
+    // $block = \Drupal\block\Entity\Block::load('');
+    // kint($block);
+    // $variables['news_events'] = \Drupal::entityTypeManager()
+    // ->getViewBuilder('block')
+    // ->view($block);
+    //kint($variables['node']->toArray());
+
+    $example_block = \Drupal::entityManager()->getStorage('block')->load('views_block__news_view_block_1_2');
+    if (!empty($example_block)){
+      $example_block_content = \Drupal::entityManager()
+        ->getViewBuilder('block')
+        ->view($example_block);
+      if ($example_block_content) {
+        // Add block content to build array
+        $variables['content']['news_events'] = $example_block_content;
+      }
+    }
+
+    $testimonial_block = \Drupal::entityManager()->getStorage('block')->load('views_block__testimonial_view_block_1');
+    if (!empty($testimonial_block)){
+      $testimonial_block_content = \Drupal::entityManager()
+        ->getViewBuilder('block')
+        ->view($testimonial_block);
+      if ($testimonial_block_content) {
+        // Add block content to build array
+        $variables['content']['testimonial'] = $testimonial_block_content;
+      }
+    }
+
+}
