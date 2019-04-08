@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.news_view
   module:
+    - node
     - views
   theme:
     - stabletheme
@@ -16,9 +17,16 @@ provider: null
 plugin: 'views_block:news_view-block_1'
 settings:
   id: 'views_block:news_view-block_1'
-  label: ''
+  label: 'Our Blog'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Our Blog'
   items_per_page: none
-visibility: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      testimonials: testimonials
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
