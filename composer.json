@@ -34,6 +34,8 @@
         "drupal/owlcarousel": "^1.0@alpha",
         "drupal/paragraphs": "^1.8",
         "drupal/slick": "^2.0",
+        "drupal/slick_extras": "^1.0@RC",
+        "drupal/slick_views": "^1.0",
         "drupal/starrating": "^4.0",
         "drupal/webform": "^5.2",
         "drush/drush": "^9.0.0",

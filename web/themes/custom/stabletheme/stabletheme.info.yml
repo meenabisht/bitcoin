@@ -16,6 +16,6 @@ regions:
   footer_secondry: 'Footer second'
 
 libraries:
-  - 'stablesubtheme/global-styling'
+  - 'stabletheme/global-styling'
 
 

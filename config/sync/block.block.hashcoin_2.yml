@@ -2,10 +2,6 @@ uuid: 16f12721-b07b-4a6e-9ed7-1e6d80bd8588
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:hashcoin:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
-  module:
-    - block_content
   theme:
     - stabletheme
 id: hashcoin_2

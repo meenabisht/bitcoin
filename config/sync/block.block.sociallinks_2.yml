@@ -2,10 +2,6 @@ uuid: 60a94d3c-3abb-4291-9e6d-0e3a0ba06368
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:soc:bc1c318c-41a7-445a-9149-1ede66eae74a'
-  module:
-    - block_content
   theme:
     - stabletheme
 id: sociallinks_2

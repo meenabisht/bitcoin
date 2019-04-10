@@ -37,4 +37,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_free: true
+  field_para_icon: true
+  field_para_service: true
   field_slider: true
