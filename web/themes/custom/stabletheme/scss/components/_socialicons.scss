@@ -1,8 +1,65 @@
 .socialicons{
     width: 300px;
     padding: 40px 0px;
-}
-.fontawesome-icons{
-    display: flex;
-    justify-content: space-around;
+    .fontawesome-icons{
+        display: flex;
+        justify-content: space-around;
+        .fontawesome-icon{
+            text-align: center;
+            float: left;
+            border: 1px solid #909090;
+            border-radius: 100%;
+            padding-top: 0.7em;
+            padding-left: 0.7em;
+            padding-right: 0.7em;
+            height: 2em;
+            cursor: pointer;
+            &:nth-child(1):hover{
+                background-color: #507cbe;
+                .fa-facebook-f {
+                    color: white;
+                }
+            }
+            &:nth-child(2):hover{
+                background-color: #00abef;
+                .fa-twitter {
+                    color: white;
+                }
+            }
+            &:nth-child(3):hover{
+                background-color: #d93e2d;
+                .fa-google-plus {
+                    color: white;
+                }
+            }
+            &:nth-child(4):hover{
+                background-color: #3371b7;
+                .fa-linkedin-in {
+                    color: white;
+                }
+            }
+            &:nth-child(5):hover{
+                background-color:#d12121;
+                .fa-youtube{
+                    color: white;
+                }
+            }
+            .fa-facebook-f{
+                color: #507cbe;
+            }
+            .fa-twitter{
+                color: #00abef;
+            }
+            .fa-google-plus{
+                color: #d93e2d;
+            }
+            .fa-linkedin-in{
+                color: #3371b7;
+            }
+            .fa-youtube{
+                color: #d12121;
+            }
+        }
+    }
+
 }

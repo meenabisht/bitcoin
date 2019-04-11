@@ -4,14 +4,22 @@
     font-size: 20px;
     margin: 0px;
     border-top: 1px solid;
+    .sub-menu{
+        background-color: white;
+        .sub-links{
+            text-decoration:none;
+            color: #333333;
+        }
+        .sub-links:visited {
+            color:#bf3654;
+
+        }
+        .sub-links:hover{
+            color:#fab915;
+        }
+    }
 }
 
 
-.sub-links{
-    text-decoration:none;
-}
 
-.sub-menu{
-    background-color: white;
-}
 
