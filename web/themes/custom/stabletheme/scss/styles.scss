@@ -2,3 +2,8 @@
 @import "components/**";
 @import "components/_bitcoin.scss";
 @import "components/_slider.scss";
+@import "./base/_reset.scss";
+@import "./base/_variables.scss";
+@import "./base/_layout.scss";
+@import "./base/_mixins.scss";
+@import "./components/*.scss";

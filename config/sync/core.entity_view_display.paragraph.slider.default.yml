@@ -17,7 +17,7 @@ bundle: slider
 mode: default
 content:
   field_about_us:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -30,18 +30,18 @@ content:
     region: content
   field_slider_body:
     type: text_default
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_slider_image:
+    type: image
     weight: 0
+    region: content
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
-    region: content
 hidden: {  }
