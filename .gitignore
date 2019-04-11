@@ -27,3 +27,5 @@ node_modules/
 
 #Ignore css folder
 css/
+
+.DS_Store/

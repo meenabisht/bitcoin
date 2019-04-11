@@ -1,9 +1,15 @@
-@import "base/**";
-@import "components/**";
-@import "components/_bitcoin.scss";
-@import "components/_slider.scss";
-@import "./base/_reset.scss";
-@import "./base/_variables.scss";
-@import "./base/_layout.scss";
-@import "./base/_mixins.scss";
-@import "./components/*.scss";
+// <<<<<<< HEAD
+@import "base/**/*";
+@import "components/**/*";
+
+// =======
+// >>>>>>> 2938ad4e7f0a444dd3436cbbdd47458af8783bf6
+// @import "./base/_ reset.scss";
+// @import "./base/_variables.scss";
+// @import "./base/_layout.scss";
+// @import "./base/_mixins.scss";
+// <<<<<<< HEAD
+// =======
+
+// >>>>>>> 2938ad4e7f0a444dd3436cbbdd47458af8783bf6
+// @import "./components/*.scss";
