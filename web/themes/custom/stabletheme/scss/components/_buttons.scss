@@ -1,0 +1,46 @@
+/* MOBILE */
+.main-div .join {
+  background-color: #bf3654;
+  color: white;
+  width: 47%;
+  text-align: center;
+  height: 58px;
+  font-size: 14px;
+  border-radius: 34px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+.bitcoin-join {
+  padding-top: 20px;
+}
+
+.main-div .join {
+  width: 30%;
+}
+
+/* DESTOP */
+@media screen and (min-width: 800px){
+  .main-div .join:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  .main-div .join {
+    background-color: #bf3654;
+    color: white;
+    width: 40%;
+    text-align: center;
+    height: 58px;
+    font-size: 14px;
+    border-radius: 34px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .bitcoin-join {
+    padding-top: 13px;
+  }
+}

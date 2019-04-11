@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // <<<<<<< HEAD
 @import "base/**/*";
 @import "components/**/*";
@@ -13,3 +14,15 @@
 
 // >>>>>>> 2938ad4e7f0a444dd3436cbbdd47458af8783bf6
 // @import "./components/*.scss";
+=======
+@import "base/**";
+@import "components/**";
+@import "components/bitcoin";
+@import "components/slider";
+@import "components/buttons";
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/layout";
+@import "./base/mixins";
+@import "./components/*.scss";
+>>>>>>> Stashed changes
