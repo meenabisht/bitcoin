@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@types/gulp-uglify": "^3.0.6",
+    "gulp-sass-glob": "^1.0.9",
     "require-dir": "^1.2.0"
   },
   "babel": {
