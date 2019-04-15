@@ -16,6 +16,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  contact_block: 0
   contact_storage: 0
   contextual: 0
   datetime: 0
@@ -56,7 +57,6 @@ module:
   slick_extras: 0
   slick_ui: 0
   slick_views: 0
-  superfish: 0
   system: 0
   taxonomy: 0
   text: 0

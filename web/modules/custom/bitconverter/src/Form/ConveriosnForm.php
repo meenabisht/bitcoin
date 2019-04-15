@@ -1,5 +1,7 @@
 <?php
+
 namespace Drupal\bitconverter\Form;
+
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Ajax\AjaxResponse;
