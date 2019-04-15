@@ -1,7 +1,3 @@
-// $(document).ready(function(){
-// $('.para-slide').slick();
-// });
-
 (function ($, Drupal){
     Drupal.behaviors.demoblock = {
         attach: function (context, settings) {

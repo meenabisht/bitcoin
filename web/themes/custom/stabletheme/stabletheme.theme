@@ -2,15 +2,6 @@
 use Drupal\views\Plugin\views\row\Fields;
 
 function stabletheme_preprocess_node(&$variables) {
-    // // kint('test');
-    // // kint($variables['page']['content']['stabletheme_content']['#block']->get());
-    // // exit();
-    // $block = \Drupal\block\Entity\Block::load('');
-    // kint($block);
-    // $variables['news_events'] = \Drupal::entityTypeManager()
-    // ->getViewBuilder('block')
-    // ->view($block);
-    //kint($variables['node']->toArray());
 
     //Creating a block variable to be accessible in Twig file.
     $example_block = \Drupal::entityManager()->getStorage('block')->load('views_block__news_view_block_1_2');
@@ -36,34 +27,4 @@ function stabletheme_preprocess_node(&$variables) {
     }
 }
 
-// function stabletheme_preprocess_paragraph(&$variables){
-//   // kint($variables['content']['field_slider_image'][0]['#uri'].value);
-//   $para = $variables['paragraph'];
-//   //$element = $variables['elements'];
-//   if($para->getType() == 'slider') {
-//     //kint($para->get('field_slider_image')->getValue());
-//     $image = $para->field_slider_image->entity->url();
-//     $variables['attributes']['style'][] = 'background-image: url("' . $image . '");';
-//     $variables['attributes']['style'][] = 'background-size: cover;';
-//     $variables['attributes']['style'][] = 'background-position: center center;';
-//     //$variables['attributes']['style'][] = 'height: 675px;';
-//   }
 
-
-  // kint(get_image_uri($element['field_slider_image']['#items']));
-  // //$variables['paragraph']->gettype();
-  // //kint($para->get('field_slider_image')->refrencedEntities());
-  // // if($variables['paragraph']['type'] == 'slider'){
-  // //   kint($variables);
-  // // }
-  //if ($element['#paragraph']->gettype() == 'slider') {
-     //$referencedEntities = $para->get('	field_slider_image');
-     //kint($referencedEntities);
-    //  foreach ($referencedEntities as $key => $value) {
-    //    $image_uri = $value->__get('image')->referencedEntities()[0]->getFileUri();
-    //    kint($image_uri);
-      //  $style = \Drupal::entityTypeManager()->getStorage('image_style')->load('infographics');
-      //  $variables['desktop_image_url'] = $style->buildUrl($image_uri);
-    //}
-   //}
-//}

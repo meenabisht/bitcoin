@@ -1,0 +1,21 @@
+uuid: 8af2ebf5-3bab-46cf-b4b4-c360e2ffdf21
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Send message'
+    show_preview: false
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: quote_form
+label: 'Free Quote Form'
+recipients:
+  - meena.bisht392@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

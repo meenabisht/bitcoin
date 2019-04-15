@@ -18,7 +18,7 @@ translatable: false
 default_value:
   -
     icon_name: facebook-f
-    settings: 'a:6:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:6:"invert";s:10:"fa-inverse";s:4:"pull";s:12:"fa-pull-left";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
+    settings: 'a:5:{s:4:"size";s:5:"fa-2x";s:11:"fixed-width";s:5:"fa-fw";s:4:"pull";s:12:"fa-pull-left";s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fab";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
     style: fab
   -
     icon_name: twitter

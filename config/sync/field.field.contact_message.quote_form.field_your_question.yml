@@ -1,0 +1,19 @@
+uuid: c62585be-2078-4d3e-818a-587b195ec993
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.quote_form
+    - field.storage.contact_message.field_your_question
+id: contact_message.quote_form.field_your_question
+field_name: field_your_question
+entity_type: contact_message
+bundle: quote_form
+label: 'Your Question'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

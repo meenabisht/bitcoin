@@ -1,0 +1,34 @@
+uuid: a47e55d2-dddf-490b-a9c3-f9544009e376
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.free_quote_para.field_contact_form_reference
+    - field.field.paragraph.free_quote_para.field_free_quote_image
+    - paragraphs.paragraphs_type.free_quote_para
+  module:
+    - image
+id: paragraph.free_quote_para.default
+targetEntityType: paragraph
+bundle: free_quote_para
+mode: default
+content:
+  field_contact_form_reference:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  field_free_quote_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden: {  }
