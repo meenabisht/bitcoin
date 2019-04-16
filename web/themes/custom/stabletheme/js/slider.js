@@ -12,7 +12,6 @@
                         fade: true,
                         cssEase: 'linear',
                         appendDots:$(".para-slide"),
-
                 });
             });
         }

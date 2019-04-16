@@ -28,9 +28,5 @@ node_modules/
 #Ignore css folder
 css/
 
-<<<<<<< HEAD
-.DS_Store/
-=======
 #Ignore css folder
 .Ds_Store/
->>>>>>> Made changes to desktop view header and slider

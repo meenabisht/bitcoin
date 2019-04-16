@@ -1,12 +1,31 @@
+<<<<<<< HEAD
+=======
+.main-row{
+  width: 100%;
+}
+
+.new {
+  width: 80%;
+  padding-left: 140px;
+}
+
+//THIS CODE BELONGS TO ME
+>>>>>>> made changes to mobile and desktop view
 img{
     max-width: 100%;
 }
 .para-slide{
     position: relative;
+    @include respond-to(mobile){
+        position: static;
+    }
     .slide-image{
         img{
             max-width: 100%;
             height: 675px;
+            @include respond-to(mobile){
+                height: 330px;;
+            }
         }
     }
 }
@@ -15,14 +34,19 @@ img{
     justify-content: center;
     margin: 0;
     padding: 1rem 0;
-
     list-style-type: none;
-
     position: absolute;
     margin: 0;
     bottom: auto;
     top: 50%;
     transform: rotate(90deg);
+
+    @include respond-to(mobile){
+        position: static;
+        transform: inherit;
+        top:0;
+        background-color: #333333;
+    }
 
         li {
             margin: 0 0.25rem;
@@ -46,44 +70,54 @@ img{
             background-color:#bf3654;
         }
 }
+
+//Animation for slider
 .slick-active{
     .slide_description_wrapper{
         animation: fadeIn 1s ease-in both;
+        @include respond-to(mobile){
+            animation: 0;
+        }
+    }
+    .slide_description{
+        @include respond-to(mobile){
+            animation: move 1s ease-in both;
+        }
     }
 }
 
 .slide_description_wrapper{
     color:white;
     width: 1140px;
-    height: 615px;
+    height: 550px;
     padding-right: 15px;
     padding-left: 15px;
     position: absolute;
     top:0;
-    margin-left: 150px;
-    .slide_description{
-        [data-slick-index="0"]{
-            @include change-text-position(0);
-        }
-        [data-slick-index="1"]{
-            @include change-text-position(1);
-        }
-        [data-slick-index="2"]{
-            @include change-text-position(2);
-        }
-
-        margin-top: 190px;
-        line-height: 5em;
+    left: 150px;
+    top: 190px;
+    line-height: 5em;
+    @include respond-to(mobile){
+        max-width: 100%;
+        background-color: #333333;
+        text-align: center;
+        position: initial;
+        margin: 0;
+        height: auto;
+    }
         .slider-body{
             font-size: 80px;
             .grey{
                 color: #333333;
+                @include respond-to(mobile){
+                    color:white;
+                }
             }
             .highlight-semibold{
                 color: #bf3654;
             }
         }
-    }
+}
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -94,4 +128,26 @@ img{
             transform: translate3d(0, -20%, 0);
         }
     }
-}
+
+    @keyframes move {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+
+    // .slide_description{
+    //     [data-slick-index="0"]{
+    //         @include change-text-position(0);
+    //     }
+    //     [data-slick-index="1"]{
+    //         @include change-text-position(1);
+    //     }
+    //     [data-slick-index="2"]{
+    //         @include change-text-position(2);
+    //     }

@@ -1,6 +1,6 @@
 .search-block-form{
     margin-top: 40px;
-    @include respond-to(tablet){
+    @include respond-to(mobile){
         display: none;
     }
 }

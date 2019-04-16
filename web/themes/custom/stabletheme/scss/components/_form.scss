@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
   ##Device = Desktops
   ##Screen = 1023px to higher resolution desktops
@@ -200,3 +201,34 @@ input#edit-field-send-link-0-title {
     text-transform: uppercase;
   }
 }
+=======
+.ajax-example-simplest {
+    position: relative;
+    width: 100%;
+}
+.bitcoinwrapper{
+    height: 500px;
+    background-repeat: no-repeat;
+}
+#ajax-example-simplest{
+    left: 200px;
+    top: 200px;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.js-form-item-amount,.form-item-type-options2, .form-item-type-options1{
+    margin: 20px;
+}
+.form-wrapper{
+    margin: 20px;
+}
+#edit-amount, #edit-display-amount,#edit-type-options1, #edit-type-options2, #textfields-container{
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+}
+
+>>>>>>> made changes to mobile and desktop view
