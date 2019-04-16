@@ -1,5 +1,5 @@
 @mixin respond-to($media) {
-    @if $media == tablet {
+    @if $media == mobile {
       @media only screen and (max-width: $break-small) { @content; }
     }
     @else if $media == wide-screens {
