@@ -7,6 +7,7 @@
                 console.log('hello');
                 $('.para-slide').slick({
                         infinite: false,
+
                         dots: true,
                         arrows: false,
                         fade: true,

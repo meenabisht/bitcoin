@@ -43,44 +43,52 @@ use Drupal\bitconverter\Services\BitService;
             '#type' => 'managed_file',
             '#title' => 'bimage',
             '#upload_location' => 'public://upload/bitconverter',
-            'default_value' => $config['bimage'],
+            '#default_value' => $config['bimage'],
         ];
         $form['access_key'] = [
           '#type' => 'textfield',
           '#title' => 'access_key',
-          'default_value' => $config['access_key'],
+          '#default_value' => isset($config['access_key']) ? $config['access_key'] : '',
       ];
+      $form['block_title'] = [
+        '#type' => 'textfield',
+        '#title' => 'block_title',
+        '#default_value' => $config['block_title'],
+    ];
       $form['top_title'] = [
         '#type' => 'textfield',
         '#title' => 'top_title',
-        'default_value' => $config['top_title'],
+        '#default_value' => $config['top_title'],
     ];
       $form['bitcoin_description'] = array(
         '#type'          => 'textarea',
         '#title'         => t('description'),
         '#required'      => true,
         '#description' => t('Enter the description here'),
-        'default_value' => $config['bitcoin_description'],
+        '#default_value' => $config['bitcoin_description'],
       );
 
       return $form;
     }
     public function blockSubmit($form, FormStateInterface $form_state) {
         $c = $form_state->getValues();
-        $this->setConfigurationValue('bimage',$c['bimage']);
-        $this->setConfigurationValue('access_key',$c['access_key']);
+        $this->configuration['access_key'] = $c['access_key'];
         $this->setConfigurationValue('top_title',$c['top_title']);
+        $this->setConfigurationValue('block_title',$c['block_title']);
         $this->setConfigurationValue('bitcoin_description',$c['bitcoin_description']);
       }
+
     public function build() {
       $configs=$this->getConfiguration();
-
       $image=$configs['bimage'];
       $image_uri = \Drupal\file\Entity\File::load($image[0]);
       $image_uri->setPermanent();
       $image_uri->save();
 
       $form = \Drupal::formBuilder()->getForm('\Drupal\bitconverter\Form\ConveriosnForm');
+      $form['top_title'] = $configs['top_title'];
+      $form['block_title'] = $configs['block_title'];
+      $form['bitcoin_description'] = $configs['bitcoin_description'];
       $form['#image'] = $image_uri->getFileUri();
       return $form;
 

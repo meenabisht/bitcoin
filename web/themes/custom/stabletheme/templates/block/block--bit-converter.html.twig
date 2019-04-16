@@ -26,14 +26,15 @@
  */
 #}
 <div{{ attributes }}>
- {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
   {% block content %}
   <div class="bitcoinwrapper" style="background-image: url('{{ file_url(content['#image']) }}');">
-  {# {{kint(content)}} #}
-  {{content}}
+  <div class = "currencywrap">
+    <div class = "top_title">{{ content.top_title }}</div>
+    <div class = "block_title">{{ content.block_title }}</div>
+    <div class = "bitcoin_description">{{ content.bitcoin_description }}</div>
+    {# {{{kint(content)}}} #}
+    {{content}}
+  </div>
+  </div>
   {% endblock %}
 </div>
