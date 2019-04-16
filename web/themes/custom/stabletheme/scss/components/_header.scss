@@ -1,13 +1,24 @@
 .hashheader{
     padding: 15px 0;
-    margin: 0 135px 0px 20px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
-    @include respond-to(tablet){
-        display: block;
-        margin: 0 104px;
-        .top-logo{
-            padding: 0 80px;
+    @include respond-to(mobile){
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        .logo{
+            margin: 0 auto;
+            .top-logo{
+                order: -1;
+                margin: 10px 0;
+                padding: 15px;
+            }
+        }
+        .socialicons{
+            order: 1;
+            margin: 0 auto;
         }
     }
 

@@ -38,25 +38,56 @@ use Drupal\bitconverter\Services\BitService;
     }
 
     public function blockForm($form, FormStateInterface $form_state) {
+      $config = $this->getConfiguration();
         $form['bimage'] = [
             '#type' => 'managed_file',
             '#title' => 'bimage',
             '#upload_location' => 'public://upload/bitconverter',
+            'default_value' => $config['bimage'],
         ];
         $form['access_key'] = [
           '#type' => 'textfield',
           '#title' => 'access_key',
+          'default_value' => $config['access_key'],
       ];
+      $form['top_title'] = [
+        '#type' => 'textfield',
+        '#title' => 'top_title',
+        'default_value' => $config['top_title'],
+    ];
+      $form['bitcoin_description'] = array(
+        '#type'          => 'textarea',
+        '#title'         => t('description'),
+        '#required'      => true,
+        '#description' => t('Enter the description here'),
+        'default_value' => $config['bitcoin_description'],
+      );
 
-
-        return $form;
+      return $form;
     }
     public function blockSubmit($form, FormStateInterface $form_state) {
         $c = $form_state->getValues();
         $this->setConfigurationValue('bimage',$c['bimage']);
         $this->setConfigurationValue('access_key',$c['access_key']);
+        $this->setConfigurationValue('top_title',$c['top_title']);
+        $this->setConfigurationValue('bitcoin_description',$c['bitcoin_description']);
       }
     public function build() {
+      $configs=$this->getConfiguration();
+
+      $image=$configs['bimage'];
+      $image_uri = \Drupal\file\Entity\File::load($image[0]);
+      $image_uri->setPermanent();
+      $image_uri->save();
+
+      $form = \Drupal::formBuilder()->getForm('\Drupal\bitconverter\Form\ConveriosnForm');
+      $form['#image'] = $image_uri->getFileUri();
+      return $form;
+
+
+      // $form = \Drupal::formBuilder()->getForm('Drupal\mhash\Form\BitcoinForm');
+      // $form['#image'] = $image_uri->getFileUri();
+      // return $form;
         // //$configs=$this->getConfiguration();
 
         // // $image=$configs['bimage'];
@@ -163,8 +194,6 @@ use Drupal\bitconverter\Services\BitService;
         //   $form['replace_textfield_container']['replace_textfield']['#description'] =
         //     $this->t("Say why you chose '@value'", ['@value' => $value]);
         // }
-        $form = \Drupal::formBuilder()->getForm('\Drupal\bitconverter\Form\ConveriosnForm');
-        return $form;
     }
 
     public static function updateDisplayAmount(array $form, FormStateInterface $form_state){
