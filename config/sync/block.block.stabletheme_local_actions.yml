@@ -1,6 +1,6 @@
 uuid: 90d384fc-fd8f-43d0-b6aa-dd5d9df2185e
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - stabletheme

@@ -1,6 +1,6 @@
-uuid: 0b8919dd-c087-444b-82f2-0d760e4a3b27
+uuid: 0479ffa8-0480-475c-968c-d1afd6edc55a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - contact.form.quote_form
@@ -8,9 +8,9 @@ dependencies:
     - contact_block
   theme:
     - stabletheme
-id: contactblock
+id: contactblock_2
 theme: stabletheme
-region: banner_bottom
+region: content
 weight: 0
 provider: null
 plugin: contact_block
