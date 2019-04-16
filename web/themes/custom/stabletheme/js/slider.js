@@ -12,7 +12,21 @@
                         fade: true,
                         cssEase: 'linear',
                         appendDots:$(".para-slide"),
-                });
+                });                
+            });
+
+            jQuery(document).ready(function($) {
+                // Code that uses jQuery's $ can follow here.
+                $('.views-row').slick({
+                    infinite: false,
+                    dots: true,
+                    arrows: false,
+                    fade: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    cssEase: 'linear',
+                    appendDots:$(".views-row"),
+                });                
             });
         }
       };
