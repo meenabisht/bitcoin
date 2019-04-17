@@ -17,6 +17,22 @@
   padding-top: 99px;
 }
 
+.container label{
+  display:none;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+.free-subtitle {
+  color: #bf3654;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .free-subtitle {
   color: #bf3654;
   font-family: 'Raleway', sans-serif;
@@ -32,18 +48,6 @@
   padding-bottom: 33px;
   padding-top: 20px;
   font-weight: 549;
-}
-
-.container label{
-  display:none;
-}
-
-.contact-wrapper {
-  display: flex;
-}
-
-.free-name{
-  padding: 30px;
 }
 
 .free-name .form-text , .free-address .form-email , .free-subject .form-text {
@@ -66,34 +70,61 @@
   border-style: none;
 }
 
-.send-link .form-text {
+.send-link .form-text {  
   height: 59px;
   text-align: center;
   border-radius: 33px;
   border-style: none;
   font-weight: bold;
   font-size: 15px;
-  width: 15%;
+  width: 10%;
   background-color: #bf3654;
-}
-
-.send-link {
-  text-align: center;
-  padding-top: 46px;
-}
-
-input#edit-field-send-link-0-title {
   color: white;
   text-transform: uppercase;
 }
 
-.free-address{
-  padding: 30px
+svg.svg-inline--fa.fa-envelope.fa-w-16 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 37%;
 }
 
-.free-subject{
+svg.svg-inline--fa.fa-user.fa-w-14 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 6%;
+}
+
+svg.svg-inline--fa.fa-paperclip.fa-w-14 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 68%;
+}
+
+svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+}
+
+.free-name{
   padding: 30px;
 }
+
 }
 
 /*
@@ -200,6 +231,36 @@ input#edit-field-send-link-0-title {
     text-transform: uppercase;
   }
 }
+<<<<<<< HEAD
+.ajax-example-simplest {
+    position: relative;
+    width: 100%;
+}
+.bitcoinwrapper{
+    height: 500px;
+    background-repeat: no-repeat;
+}
+#ajax-example-simplest{
+    left: 200px;
+    top: 200px;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.js-form-item-amount,.form-item-type-options2, .form-item-type-options1{
+    margin: 20px;
+}
+.form-wrapper{
+    margin: 20px;
+}
+#edit-amount, #edit-display-amount,#edit-type-options1, #edit-type-options2, #textfields-container{
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+}
+=======
 
 //This is my code.
 .ajax-example-simplest {
@@ -277,4 +338,5 @@ input#edit-field-send-link-0-title {
      }
 }
 
+>>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
 

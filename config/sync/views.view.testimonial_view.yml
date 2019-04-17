@@ -99,8 +99,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-image\">\r\n{{ field_testimonial_image }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -163,8 +163,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-icon\">\r\n{{ field_testimonial_icon }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -227,8 +227,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-first\">\r\n{{ field_first_name }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -290,8 +290,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-last\">\r\n{{ field_testimonial_last_name }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -353,8 +353,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-rating\">\r\n{{ field_testimonial_rating__rating }} \r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -418,8 +418,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"testimonial-body\">\r\n{{ body }} \r\n</div>"
             make_link: false
             path: ''
             absolute: false
