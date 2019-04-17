@@ -7,11 +7,16 @@
                 console.log('hello');
                 $('.para-slide').slick({
                         infinite: false,
+<<<<<<< HEAD
+=======
+
+>>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
                         dots: true,
                         arrows: false,
                         fade: true,
                         cssEase: 'linear',
                         appendDots:$(".para-slide"),
+<<<<<<< HEAD
                 });                
             });
 
@@ -27,6 +32,9 @@
                     cssEase: 'linear',
                     appendDots:$(".views-row"),
                 });                
+=======
+                });
+>>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
             });
         }
       };
