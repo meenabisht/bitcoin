@@ -3,13 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news_events.body
-    - field.field.node.news_events.field_linking_image
+    - field.field.node.news_events.field_icon_image
     - field.field.node.news_events.field_main_image
+    - field.field.node.news_events.field_news
+    - field.field.node.news_events.field_news_descripa
     - field.field.node.news_events.field_news_reference
     - node.type.news_events
   module:
-    - image
+    - fontawesome
+    - link
+    - owlcarousel
     - text
     - user
 id: node.news_events.default
@@ -17,30 +20,66 @@ targetEntityType: node
 bundle: news_events
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_linking_image:
-    weight: 2
-    label: hidden
+  field_icon_image:
+    weight: 5
+    label: above
     settings:
-      image_style: ''
-      image_link: ''
+      layers: false
     third_party_settings: {  }
-    type: image
+    type: fontawesome_icon_formatter
     region: content
   field_main_image:
     weight: 1
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
+      image_link: content
+      items: '3'
+      itemsDesktop: '[1199,4]'
+      itemsDesktopSmall: '[979,3]'
+      itemsTablet: '[768,2]'
+      itemsMobile: '[479,1]'
+      slideSpeed: '200'
+      paginationSpeed: '800'
+      rewindSpeed: '1000'
+      prevText: prev
+      nextText: next
+      rewindNav: '1'
+      pagination: '1'
+      responsive: '1'
+      responsiveRefreshRate: '200'
+      mouseDrag: '1'
+      touchDrag: '1'
+      transitionStyle: fade
+      singleItem: 0
+      itemsScaleUp: 0
+      autoPlay: 0
+      stopOnHover: 0
+      navigation: 0
+      scrollPerPage: 0
+      paginationNumbers: 0
+      navigationText: '["prev","next"]'
     third_party_settings: {  }
-    type: image
+    type: owlcarousel_field_formatter
+    region: content
+  field_news:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_news_descripa:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_news_reference:
     weight: 4

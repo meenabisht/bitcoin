@@ -1,0 +1,36 @@
+uuid: 1de4dc32-1170-4981-9032-14dc81aea69d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_and_events
+  module:
+    - node
+    - views
+  theme:
+    - stabletheme
+id: views_block__news_and_events_block_1_2
+theme: stabletheme
+region: content
+<<<<<<< HEAD:config/sync/block.block.stabletheme_views_block__news_view_block_1.yml
+weight: -5
+=======
+weight: 0
+>>>>>>> config export for news events:config/sync/block.block.views_block__news_and_events_block_1_2.yml
+provider: null
+plugin: 'views_block:news_and_events-block_1'
+settings:
+  id: 'views_block:news_and_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

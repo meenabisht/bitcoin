@@ -3,14 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news_events.body
-    - field.field.node.news_events.field_linking_image
+    - field.field.node.news_events.field_icon_image
     - field.field.node.news_events.field_main_image
+    - field.field.node.news_events.field_news
+    - field.field.node.news_events.field_news_descripa
     - field.field.node.news_events.field_news_reference
     - image.style.thumbnail
     - node.type.news_events
   module:
+    - fontawesome
     - image
+    - link
     - path
     - text
 id: node.news_events.default
@@ -18,28 +21,17 @@ targetEntityType: node
 bundle: news_events
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_linking_image:
-    weight: 123
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+  field_icon_image:
+    weight: 125
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: fontawesome_icon_widget
     region: content
   field_main_image:
     weight: 122
@@ -48,6 +40,22 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_news:
+    weight: 126
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_news_descripa:
+    weight: 127
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_news_reference:
     weight: 124

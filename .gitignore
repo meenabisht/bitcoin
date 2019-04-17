@@ -29,4 +29,8 @@ node_modules/
 css/
 
 #Ignore css folder
+<<<<<<< HEAD
 .Ds_Store/
+=======
+.Ds_Store/
+>>>>>>> config export for news events

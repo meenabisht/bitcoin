@@ -1,22 +1,22 @@
-uuid: e0e17159-b0c0-4bb3-9fc2-1bb5464847ef
+uuid: 5e25188b-83ea-45af-ae34-ebca1ef15a14
 langcode: en
 status: false
 dependencies:
   config:
-    - views.view.news_view
+    - views.view.news_and_events
   module:
     - node
     - views
   theme:
     - stabletheme
-id: views_block__news_view_block_1_2
+id: views_block__news_and_events_block_1
 theme: stabletheme
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:news_view-block_1'
+plugin: 'views_block:news_and_events-block_1'
 settings:
-  id: 'views_block:news_view-block_1'
+  id: 'views_block:news_and_events-block_1'
   label: ''
   provider: views
   label_display: visible
