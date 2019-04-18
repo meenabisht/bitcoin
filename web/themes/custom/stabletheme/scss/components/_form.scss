@@ -145,67 +145,52 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
   .freeimage {
     background-size: cover;
     background-position: right center;
-    height: 688px;
+    height: 700px;
     position: relative;
+    padding: 33px;
   }
-
-  .free-subtitle {
-    text-align: center;
-    color: #bf3654;
-    font-family: sans-serif;
-    letter-spacing: .1em;
-    font-size: 14px;
-  }
-
-  .free-title{
-    text-align: center;
-    font-size: 44px;
-    font-family: sans-serif;
-    padding-top: 14px;
-  }
-
-  .free-title {
-    font-size: 43px;
-    font-family: sans-serif;
-  }
-
   .container {
-    top: 33%;
-    position: absolute;
-    top: 15%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 99px;
   }
-
+  .free-subtitle {
+    color: #bf3654;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .free-title {
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-bottom: 33px;
+    padding-top: 20px;
+    font-weight: 549;
+  }
   .container label{
     display:none;
   }
-
-  .contact-form {
-    padding-top: 55px;
+  .contact-wrapper {
+    display: flex;
   }
-
-  input#edit-field-full-name-0-value , input#edit-field-your-subject-0-value , input#edit-field-address-0-value{
-    height: 34px;
-    border-radius: 23px;
-    border-style: none;
+  .free-name{
+    padding: 30px;
+  }
+  .free-name .form-text , .free-address .form-email , .free-subject .form-text {
+    height: 41px;
+    width: 100%;
+    border-radius: 33px;
     text-align: center;
-    font-size: 16px;
-    width: 79%;
-  }
-
-  .free-name , .free-address ,.free-subject{
-    padding-bottom: 15px;
-    padding-left: 60px;
-  }
-
-  .free-question{
-    padding-left: 60px;
-  }
-
-  textarea#edit-field-your-question-0-value {
+    font-size: 15px;
+    font-weight: bold;
     border-style: none;
-    height: 156px;
-    border-radius: 31px;
-    width: 78%;
+  }
+  .free-question .form-textarea{
+    height: 160px;
+    width: 100%;
+    border-radius: 33px;
     text-align: center;
     font-size: 15px;
   }
@@ -217,50 +202,114 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
     border-style: none;
     font-weight: bold;
     font-size: 15px;
-    width: 59%;
+    width: 15%;
     background-color: #bf3654;
   }
-
   .send-link {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 46px;
   }
-
   input#edit-field-send-link-0-title {
     color: white;
     text-transform: uppercase;
   }
-}
-<<<<<<< HEAD
-.ajax-example-simplest {
-    position: relative;
-    width: 100%;
-}
-.bitcoinwrapper{
-    height: 500px;
-    background-repeat: no-repeat;
-}
-#ajax-example-simplest{
-    left: 200px;
-    top: 200px;
-    width: 50%;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-}
-.js-form-item-amount,.form-item-type-options2, .form-item-type-options1{
-    margin: 20px;
-}
-.form-wrapper{
-    margin: 20px;
-}
-#edit-amount, #edit-display-amount,#edit-type-options1, #edit-type-options2, #textfields-container{
-    border-radius: 50px;
-    height: 40px;
-    width: 200px;
-    font-size: 14px;
-}
-=======
+
+  .free-address{
+    padding: 30px
+  }
+  .free-subject{
+    padding: 30px;
+  }
+  }
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 767px to 1023px
+  */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    
+  }
+  /* 
+    ##Device = Mobiles
+    ##Screen = B/w 320px to 767px
+  */
+  @media (min-width: 320px) and (max-width: 767px) {
+    .freeimage {
+      background-size: cover;
+      background-position: right center;
+      height: 688px;
+      position: relative;
+    }
+    .free-subtitle {
+      text-align: center;
+      color: #bf3654;
+      font-family: sans-serif;
+      letter-spacing: .1em;
+      font-size: 14px;
+    }
+    .free-title{
+      text-align: center;
+      font-size: 44px;
+      font-family: sans-serif;
+      padding-top: 14px;
+    }
+    .free-title {
+      font-size: 43px;
+      font-family: sans-serif;
+    }
+    .container {
+      top: 33%;
+      position: absolute;
+      top: 15%;
+    }
+    .container label{
+      display:none;
+    }
+    .contact-form {
+      padding-top: 55px;
+    }
+    input#edit-field-full-name-0-value , input#edit-field-your-subject-0-value , input#edit-field-address-0-value{
+      height: 34px;
+      border-radius: 23px;
+      border-style: none;
+      text-align: center;
+      font-size: 16px;
+      width: 79%;
+    }
+    .free-name , .free-address ,.free-subject{
+      padding-bottom: 15px;
+      padding-left: 60px;
+    }
+    .free-question{
+      padding-left: 60px;
+    }
+    textarea#edit-field-your-question-0-value {
+      border-style: none;
+      height: 156px;
+      border-radius: 31px;
+      width: 78%;
+      text-align: center;
+      font-size: 15px;
+    } 
+    .send-link .form-text {
+      height: 59px;
+      text-align: center;
+      border-radius: 33px;
+      border-style: none;
+      font-weight: bold;
+      font-size: 15px;
+      width: 59%;
+      background-color: #bf3654;
+    }
+    .send-link {
+      text-align: center;
+      padding-top: 18px;
+    }
+    input#edit-field-send-link-0-title {
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+
 
 //This is my code.
 .ajax-example-simplest {
@@ -337,6 +386,3 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
      }
      }
 }
-
->>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
-

@@ -1,0 +1,40 @@
+uuid: 2d7c820c-48e7-4316-9ab7-4a10ba2191a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services.body
+    - field.field.node.services.field_iconser
+    - node.type.services
+  module:
+    - fontawesome
+    - text
+    - user
+id: node.services.teaser
+targetEntityType: node
+bundle: services
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 4
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_iconser:
+    type: fontawesome_icon_formatter
+    weight: 2
+    region: content
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

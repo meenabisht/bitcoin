@@ -9,7 +9,7 @@ _core:
 id: stabletheme_local_tasks
 theme: stabletheme
 region: content
-weight: -6
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

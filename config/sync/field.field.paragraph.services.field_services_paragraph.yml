@@ -31,14 +31,14 @@ settings:
       icons:
         enabled: true
         weight: 8
+      recent_blog:
+        weight: 9
+        enabled: false
       services:
         weight: 9
         enabled: false
       slider:
         weight: 10
-        enabled: false
-      testimonials:
-        weight: 11
         enabled: false
       what_is_bitcoin:
         weight: 12
