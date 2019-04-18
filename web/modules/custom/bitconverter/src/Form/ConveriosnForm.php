@@ -50,6 +50,7 @@ class ConveriosnForm extends FormBase {
     $form['textfields_container']['display_amount'] = [
         '#type' => 'textfield',
         '#placeholder' => t('Enter Amount'),
+        '#attributes' => array('class' => array('display_amount')),
     ];
 
       $form['type_options2'] = [

@@ -2,6 +2,8 @@ global-styling:
   css:
     theme:
       dist/css/styles.css: {}
+      dist/css/fontawesome-web/all.css: {}
+      
   js:
     js/slider.js: {}
   dependencies:
