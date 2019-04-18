@@ -1,21 +1,24 @@
-uuid: 20f7b27a-4036-4618-b380-3cd251090221
+uuid: 8aae2386-2f3d-42bc-8121-971093e67d35
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_linking_image
+    - field.storage.node.field_icon_image
     - field.storage.node.field_main_image
+    - field.storage.node.field_news
+    - field.storage.node.field_news_descripa
     - field.storage.node.field_news_reference
     - node.type.news_events
   module:
+    - fontawesome
     - image
+    - link
     - node
     - owlcarousel
     - text
     - user
-id: news_view
-label: 'News View'
+id: news_and_events
+label: 'News and Events'
 module: views
 description: ''
 tag: ''
@@ -55,7 +58,11 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
+<<<<<<< HEAD:config/sync/views.view.news_view.yml
         type: mini
+=======
+        type: none
+>>>>>>> config export for news events:config/sync/views.view.news_and_events.yml
         options:
           items_per_page: 10
           offset: 0
@@ -108,6 +115,9 @@ display:
           rewindNav: 0
           scrollPerPage: 0
           pagination: 1
+          rewindNav: 1
+          scrollPerPage: 0
+          pagination: 0
           paginationNumbers: 0
           responsive: 1
           responsiveRefreshRate: '200'
@@ -126,7 +136,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -182,15 +192,15 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_linking_image:
-          id: field_linking_image
-          table: node__field_linking_image
-          field: field_linking_image
+        field_icon_image:
+          id: field_icon_image
+          table: node__field_icon_image
+          field: field_icon_image
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -230,11 +240,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: icon_name
+          type: fontawesome_icon_formatter
           settings:
             image_style: ''
             image_link: ''
+            layers: 0
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -256,11 +267,15 @@ display:
           id: uid
           table: node_field_data
           field: uid
+        field_news:
+          id: field_news
+          table: node__field_news
+          field: field_news
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -305,6 +320,15 @@ display:
           settings:
             link: true
           group_column: target_id
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -321,12 +345,20 @@ display:
           id: created
           table: node_field_data
           field: created
+<<<<<<< HEAD:config/sync/views.view.news_view.yml
 >>>>>>> 28e7d51f2a93d721ae23515ce26c93728d454a6b
+=======
+          plugin_id: field
+        field_news_descripa:
+          id: field_news_descripa
+          table: node__field_news_descripa
+          field: field_news_descripa
+>>>>>>> config export for news events:config/sync/views.view.news_and_events.yml
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -376,7 +408,12 @@ display:
             date_format: medium
             custom_date_format: ''
             timezone: ''
+<<<<<<< HEAD:config/sync/views.view.news_view.yml
 >>>>>>> 28e7d51f2a93d721ae23515ce26c93728d454a6b
+=======
+          type: text_default
+          settings: {  }
+>>>>>>> config export for news events:config/sync/views.view.news_and_events.yml
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -398,7 +435,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -448,7 +485,15 @@ display:
 =======
           type: text_default
           settings: {  }
+<<<<<<< HEAD:config/sync/views.view.news_view.yml
 >>>>>>> 28e7d51f2a93d721ae23515ce26c93728d454a6b
+=======
+          type: timestamp
+          settings:
+            date_format: bitcoin_format
+            custom_date_format: ''
+            timezone: ''
+>>>>>>> config export for news events:config/sync/views.view.news_and_events.yml
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -468,7 +513,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -535,8 +580,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div class = \"news-view\" >\r\n<div class=\"news-image\">{{ field_main_image }}</div>\r\n<div class=\"news-icon\">{{ field_icon_image }}</div>\r\n<div class=\"news-title\">{{ field_news }}</div>\r\n<div class=\"news-description\">{{ field_news_descripa }}</div>\r\n<div class =news-view-sub>\r\n<div class=\"news-created\">{{ created }}</div>\r\n<div class=\"news-uid\">{{ uid }}</div>\r\n<div class=\"news-reference\">{{ field_news_reference }}</div>\r\n</div>\r\n\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -604,8 +649,39 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             news_events: news_events
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -625,16 +701,17 @@ display:
           expose:
             label: ''
           granularity: second
+<<<<<<< HEAD:config/sync/views.view.news_view.yml
       title: 'News and Events.'
+=======
+      title: 'News and Events'
+>>>>>>> config export for news events:config/sync/views.view.news_and_events.yml
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: true
-      link_url: ''
-      link_display: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -644,19 +721,18 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_linking_image'
+        - 'config:field.storage.node.field_icon_image'
         - 'config:field.storage.node.field_main_image'
+        - 'config:field.storage.node.field_news'
+        - 'config:field.storage.node.field_news_descripa'
         - 'config:field.storage.node.field_news_reference'
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'News and Events.'
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      display_description: ''
-      block_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -666,7 +742,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_linking_image'
+        - 'config:field.storage.node.field_icon_image'
         - 'config:field.storage.node.field_main_image'
+        - 'config:field.storage.node.field_news'
+        - 'config:field.storage.node.field_news_descripa'
         - 'config:field.storage.node.field_news_reference'

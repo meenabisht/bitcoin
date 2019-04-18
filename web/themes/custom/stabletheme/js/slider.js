@@ -36,6 +36,41 @@
                 });
 >>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
             });
+
+            $('.original-banner').slick({
+              centerMode: true,
+              centerPadding: '60px',
+              slidesToShow: 6,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 6
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+
+          $('.toggle-btn').on('click', function (){
+            $('.sidebar').animate({width: 'toggle'}, 1000);
+          });
+
         }
       };
     })(jQuery, Drupal);
+
+  // function togglsidebar(){
+  //   document.getElementById("sidebar").classlist.toggle('active');
+  // }

@@ -1,3 +1,4 @@
+#block-mainnavigation{
 .top-menu{
     display: flex;
     justify-content: center;
@@ -6,9 +7,17 @@
     border-top: 1px solid;
     .sub-menu{
         background-color: white;
+        @include respond-to(mobile){
+            background-color: #151719;
+        }
         .sub-links{
             text-decoration:none;
             color: #333333;
+            @include respond-to(mobile){
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+            }
         }
         .sub-links:visited {
             color:#bf3654;
@@ -19,45 +28,43 @@
         }
     }
 }
-
-
+}
 
 @include respond-to(mobile){
     .sidebar {
-        background-color: black;
-        width: 150px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        transition: left 0.5s ease;
+        background-color: #151719;
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        top:0px;
+        z-index: 1;
+        .sf-accordion-toggle{
+            display: none;
+        }
+        .top-menu{
+            display: flex !important;
+            flex-direction: column;
+        }
     }
 
-    input[type=checkbox] {
-        display: none;
-     }
+    .menu{
+        .toggle-btn{
+            right: 0px;
+            top:0;
+            position: absolute;
+            z-index: 1;
+            .fa-bars{
+                font-size: 35px;
+                margin: 5px 0px;
+            }
 
-     input:checked ~ label {
-         left: 0;
-     }
-     input:checked + .sidebar {
-        left: 0;
+        }
     }
-     label {
-         z-index: 2;
-         position: absolute;
-         top: 0;
-         left: 150px;
-         background-color: #1abc9c;
-         color:#fff;
-         padding:10px;
-         transition: left 0.5s ease;
-     }
-     label:hover {
-       cursor:pointer;
-     }
+
 }
 
-
-
-
+/*
+#toolbar-administration{
+    display: none;
+}
+*/

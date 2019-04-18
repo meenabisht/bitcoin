@@ -1,0 +1,21 @@
+uuid: d1732823-9ca9-4847-a47f-4ff0340b666d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_image
+    - node.type.news_events
+  module:
+    - fontawesome
+id: node.news_events.field_icon_image
+field_name: field_icon_image
+entity_type: node
+bundle: news_events
+label: 'icon image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

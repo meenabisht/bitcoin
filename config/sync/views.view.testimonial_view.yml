@@ -1,9 +1,10 @@
 uuid: d9183701-0457-4e2a-9399-aeb65f0f8a40
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.body
+<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
     - field.storage.node.field_first_name
     - field.storage.node.field_testimonial_icon
     - field.storage.node.field_testimonial_image
@@ -11,6 +12,10 @@ dependencies:
     - field.storage.node.field_testimonial_rating
     - image.style.medium
     - node.type.testimonials
+=======
+    - field.storage.node.field_main_image
+    - node.type.news_events
+>>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
   module:
     - fivestar
     - image
@@ -152,6 +157,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
           plugin_id: field
         field_testimonial_icon:
           id: field_testimonial_icon
@@ -221,6 +227,12 @@ display:
           id: field_first_name
           table: node__field_first_name
           field: field_first_name
+=======
+        field_main_image:
+          id: field_main_image
+          table: node__field_main_image
+          field: field_main_image
+>>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
           relationship: none
           group_type: group
           admin_label: ''
@@ -513,11 +525,15 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_testimonial_icon'
         - 'config:field.storage.node.field_testimonial_image'
         - 'config:field.storage.node.field_testimonial_last_name'
         - 'config:field.storage.node.field_testimonial_rating'
+=======
+        - 'config:field.storage.node.field_main_image'
+>>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
   block_1:
     display_plugin: block
     id: block_1
@@ -535,8 +551,12 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_testimonial_icon'
         - 'config:field.storage.node.field_testimonial_image'
         - 'config:field.storage.node.field_testimonial_last_name'
         - 'config:field.storage.node.field_testimonial_rating'
+=======
+        - 'config:field.storage.node.field_main_image'
+>>>>>>> config export for news events:config/sync/views.view.xyz_test.yml

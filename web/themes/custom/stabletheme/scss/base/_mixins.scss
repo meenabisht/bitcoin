@@ -7,12 +7,12 @@
     }
   }
 
-  //Aligns slider text
-  @mixin change-text-position($data-slick-index){
-    @if $data-slick-index == 1 {
-      text-align-last: center;
-    }
-    @else if $data-slick-index == 2{
-      text-align-last: right;
-    }
-  }
+  // //Aligns slider text
+  // @mixin change-text-position($data-slick-index){
+  //   @if $data-slick-index == 1 {
+  //     text-align-last: center;
+  //   }
+  //   @else if $data-slick-index == 2{
+  //     text-align-last: right;
+  //   }
+  // }

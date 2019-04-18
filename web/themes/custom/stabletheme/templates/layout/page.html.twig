@@ -51,9 +51,12 @@
 
 
   <div class = "menu">
-    <input id="slide-sidebar" type="checkbox" role="button" />
-    <label for="slide-sidebar"><span><i class="fa fa-bars"></i></span></label>
-    <div class="sidebar">{{ page.primary_menu }}</div>
+  <div class= "toggle-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+    <div class="sidebar">
+      {{ page.primary_menu }}
+    </div>
   </div>
 
   {% if page.banner_top %}

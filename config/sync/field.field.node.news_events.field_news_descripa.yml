@@ -1,0 +1,21 @@
+uuid: 72aa09ed-466e-48c1-b1e1-85e324f50d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_descripa
+    - node.type.news_events
+  module:
+    - text
+id: node.news_events.field_news_descripa
+field_name: field_news_descripa
+entity_type: node
+bundle: news_events
+label: 'News Descripation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
