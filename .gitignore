@@ -26,11 +26,7 @@
 node_modules/
 
 #Ignore css folder
-<<<<<<< HEAD
-css/
-=======
 css/
 
 #Ignore css folder
 .Ds_Store/
->>>>>>> master

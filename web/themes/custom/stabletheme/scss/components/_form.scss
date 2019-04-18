@@ -1,8 +1,147 @@
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1023px to higher resolution desktops
 */
 @media screen and (min-width: 1024px){
+.freeimage {
+  background-size: cover;
+  background-position: right center;
+  height: 700px;
+  position: relative;
+  padding: 33px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 99px;
+}
+
+.container label{
+  display:none;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+.free-subtitle {
+  color: #bf3654;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.free-subtitle {
+  color: #bf3654;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.free-title {
+  font-size: 48px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-bottom: 33px;
+  padding-top: 20px;
+  font-weight: 549;
+}
+
+.free-name .form-text , .free-address .form-email , .free-subject .form-text {
+  height: 41px;
+  width: 100%;
+  border-radius: 33px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-style: none;
+}
+
+.free-question .form-textarea{
+  height: 160px;
+  width: 100%;
+  border-radius: 33px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-style: none;
+}
+
+.send-link .form-text {  
+  height: 59px;
+  text-align: center;
+  border-radius: 33px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 10%;
+  background-color: #bf3654;
+  color: white;
+  text-transform: uppercase;
+}
+
+svg.svg-inline--fa.fa-envelope.fa-w-16 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 37%;
+}
+
+svg.svg-inline--fa.fa-user.fa-w-14 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 6%;
+}
+
+svg.svg-inline--fa.fa-paperclip.fa-w-14 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+  top: 37%;
+  left: 68%;
+}
+
+svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  position: absolute;
+  color: #bf3654;
+}
+
+.free-name{
+  padding: 30px;
+}
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 767px to 1023px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = B/w 320px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
   .freeimage {
     background-size: cover;
     background-position: right center;
@@ -54,9 +193,8 @@
     border-radius: 33px;
     text-align: center;
     font-size: 15px;
-    font-weight: bold;
-    border-style: none;
   }
+
   .send-link .form-text {
     height: 59px;
     text-align: center;
@@ -75,6 +213,7 @@
     color: white;
     text-transform: uppercase;
   }
+
   .free-address{
     padding: 30px
   }
@@ -170,3 +309,80 @@
       text-transform: uppercase;
     }
   }
+
+
+//This is my code.
+.ajax-example-simplest {
+    position: relative;
+    width: 100%;
+    .bitcoinwrapper{
+      height: 675px;
+      .currencywrap{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        position: absolute;
+        left: 100px;
+        @include respond-to(mobile){
+          left: 20px;
+        }
+      }
+     }
+     #ajax-example-simplest{
+         left: 200px;
+         top: 350px;
+         display: flex;
+         flex-wrap: wrap;
+         @include respond-to(mobile){
+          margin: 0 auto;
+          left: 0;
+          max-width: 100%
+        }
+     }
+     .js-form-item-amount,.form-item-type-options2, .form-item-type-options1,.form-wrapper{
+         margin: 10px;
+         width: 40%;
+     }
+
+     #edit-amount, #edit-display-amount, #edit-type-options1, #edit-type-options2, .display_amount{
+         border-radius: 50px;
+         height: 40px;
+         font-size: 14px;
+         padding: 5px 40px;
+         text-align: center;
+         -webkit-appearance: none;
+         width: 100%;
+        box-sizing: border-box;
+     }
+     .top_title{
+       top: 10px;
+       font-size: 20px;
+       color:#bf3654;
+     }
+     .block_title{
+       top: 60px;
+       font-weight: bold;
+       font-size: 30px;
+       color:black;
+     }
+     .bitcoin_description{
+       top: 150px;
+       min-width: 50%;
+       @include respond-to(mobile){
+         width: 100%;
+       }
+       line-height: 1em;
+       font-size: 20px;
+       color: white;
+     }
+     .bitcoin_description, .block_title, .top_title{
+       width: 100%;
+       margin: 20px;
+     @include respond-to(mobile){
+       left: 0;
+     }
+     }
+}

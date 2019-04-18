@@ -1,0 +1,23 @@
+uuid: 0479ffa8-0480-475c-968c-d1afd6edc55a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.quote_form
+  module:
+    - contact_block
+  theme:
+    - stabletheme
+id: contactblock_2
+theme: stabletheme
+region: content
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: visible
+  contact_form: quote_form
+visibility: {  }
