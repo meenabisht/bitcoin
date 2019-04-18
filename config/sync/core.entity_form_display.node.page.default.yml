@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_free
     - field.field.node.page.field_para_icon
     - field.field.node.page.field_para_service
     - field.field.node.page.field_slider
@@ -11,6 +12,7 @@ dependencies:
   module:
     - paragraphs
     - path
+    - webform
 _core:
   default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
 id: node.page.default
@@ -24,6 +26,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_free:
+    weight: 26
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
   field_para_icon:
     type: paragraphs
     weight: 9

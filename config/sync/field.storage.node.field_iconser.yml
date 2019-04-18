@@ -1,0 +1,19 @@
+uuid: 171e43e2-b3c4-4e9d-806b-bc9e6232506a
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome
+    - node
+id: node.field_iconser
+field_name: field_iconser
+entity_type: node
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

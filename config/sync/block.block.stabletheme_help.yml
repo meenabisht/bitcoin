@@ -1,6 +1,6 @@
 uuid: b5ad12b5-1f2f-461e-92e2-a00d6a2f974b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: stabletheme_help
 theme: stabletheme
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: help_block
 settings:

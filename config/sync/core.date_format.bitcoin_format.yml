@@ -1,8 +1,0 @@
-uuid: 6626c312-1366-4c18-9a16-b6a3cc67b097
-langcode: en
-status: true
-dependencies: {  }
-id: bitcoin_format
-label: 'Bitcoin Format'
-locked: false
-pattern: m.d.y

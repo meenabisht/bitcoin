@@ -1,0 +1,24 @@
+uuid: e29b4093-f246-42b2-bc72-124a25aabe0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services_view
+  module:
+    - views
+  theme:
+    - stabletheme
+id: views_block__services_view_block_1
+theme: stabletheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:services_view-block_1'
+settings:
+  id: 'views_block:services_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

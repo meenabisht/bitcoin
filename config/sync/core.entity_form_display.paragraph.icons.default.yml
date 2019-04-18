@@ -4,12 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.icons.field_description
-    - field.field.paragraph.icons.field_icons_image
+    - field.field.paragraph.icons.field_icons
     - field.field.paragraph.icons.field_slider_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.icons
   module:
-    - image
+    - fontawesome
     - text
 id: paragraph.icons.default
 targetEntityType: paragraph
@@ -24,13 +23,11 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_icons_image:
-    weight: 0
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+  field_icons:
+    weight: 3
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: fontawesome_icon_widget
     region: content
   field_slider_title:
     weight: 1
