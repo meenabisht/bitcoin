@@ -1,1 +1,10 @@
+.original-banner{
+    .slick-list{
+        opacity: 0.5;
+    }
+    padding: 50px;
 
+    .slick-current{
+        opacity: 1;
+    }
+}

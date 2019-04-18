@@ -44,7 +44,7 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass('banner') }}>
+    <div{{ attributes.addClass('original-banner') }}>
       {% for item in items %}
         <div{{ item.attributes.addClass('banner-bottom') }}>{{ item.content }}</div>
       {% endfor %}
@@ -55,7 +55,7 @@
     {% endfor %}
   {% endif %}
 {% else %}
-  <div{{ attributes.addClass('banner') }}>
+  <div{{ attributes.addClass('original-banner') }}>
     {# <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div> #}
     {% if multiple %}
       {# <div> #}

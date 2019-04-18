@@ -37,7 +37,7 @@
 >>>>>>> b0c28013a64fefdbb003ff0dcf6a499a78991bab
             });
 
-            $('.banner').slick({
+            $('.original-banner').slick({
               centerMode: true,
               centerPadding: '60px',
               slidesToShow: 6,
@@ -57,13 +57,20 @@
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 4
+                    slidesToShow: 1
                   }
                 }
               ]
             });
+
+          $('.toggle-btn').on('click', function (){
+            $('.sidebar').animate({width: 'toggle'}, 1000);
+          });
+
         }
       };
     })(jQuery, Drupal);
 
-
+  // function togglsidebar(){
+  //   document.getElementById("sidebar").classlist.toggle('active');
+  // }

@@ -6,6 +6,7 @@
   width: 80%;
   padding-left: 140px;
 }
+
 /*THIS CODE BELONGS TO ME*/
 
 img{
@@ -137,7 +138,9 @@ img{
             transform: translate3d(0, 0, 0);
         }
     }
-
+#toolbar-administration{
+    display: none;
+}
 
     // .slide_description{
     //     [data-slick-index="0"]{
