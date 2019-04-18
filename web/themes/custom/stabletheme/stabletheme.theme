@@ -1,16 +1,9 @@
 <?php
+use Drupal\views\Plugin\views\row\Fields;
 
 function stabletheme_preprocess_node(&$variables) {
-    // // kint('test');
-    // // kint($variables['page']['content']['stabletheme_content']['#block']->get());
-    // // exit();
-    // $block = \Drupal\block\Entity\Block::load('');
-    // kint($block);
-    // $variables['news_events'] = \Drupal::entityTypeManager()
-    // ->getViewBuilder('block')
-    // ->view($block);
-    //kint($variables['node']->toArray());
 
+    //Creating a block variable to be accessible in Twig file.
     $example_block = \Drupal::entityManager()->getStorage('block')->load('views_block__news_view_block_1_2');
     if (!empty($example_block)){
       $example_block_content = \Drupal::entityManager()
@@ -32,5 +25,11 @@ function stabletheme_preprocess_node(&$variables) {
         $variables['content']['testimonial'] = $testimonial_block_content;
       }
     }
+<<<<<<< HEAD
 
 }
+=======
+}
+
+
+>>>>>>> master

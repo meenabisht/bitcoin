@@ -2,3 +2,14 @@ global-styling:
   css:
     theme:
       dist/css/styles.css: {}
+  js:
+    js/slider.js: {}
+  dependencies:
+    - stabletheme/slick-slider
+
+slick-slider:
+  css:
+    component:
+      vendor/slick-master/slick/slick.css: {}
+  js:
+    vendor/slick-master/slick/slick.min.js: {}

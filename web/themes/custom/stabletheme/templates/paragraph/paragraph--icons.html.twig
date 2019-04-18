@@ -49,10 +49,10 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-     <div class="image_wrapper"> <div class = "icons_image">{{ content.field_icons_image }}</div></div>
+     <div class="image_wrapper"><div class = "icons_image">{{ content.field_icons }}</div></div>
       <div class = "title">{{ content.field_slider_title }}</div>
       <div class = "description">{{ content.field_description }}</div>
-      <div class="border"></div><span class="arrow">&#8594;</span><div class="border"></div>
+      
     {% endblock %}
     
   </div>

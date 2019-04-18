@@ -1,0 +1,146 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1023px to higher resolution desktops
+*/
+@media screen and (min-width: 1024px){
+  .image-background {
+    position: relative;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+  }
+
+  .main-div {
+    position: absolute;
+    width: 43%;
+    right: 0;
+    top: 20%;
+  }
+
+  .title {
+    color: #bf3654;
+    border-color: #bf3654;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  .subtitle {
+    width: 58%;
+    font-size: 57px;
+    line-height: 51px;
+  }
+
+  .description {
+    width: 85%;
+    line-height: 32px;
+    font-size: 17px;
+    color: grey;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+
+  .image-bg{
+    position: relative;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 767px to 1023px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  .image-background {
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+    background-position-y: left;
+  }
+
+  .main-div {
+    position: absolute;
+    width: 59%;
+    top: 20%;
+    left: 32%;
+  }
+
+  .title {
+    color: #bf3654;
+    border-color: #bf3654;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+  }
+
+  .subtitle {
+    width: 82%;
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .description {
+    width: 85%;
+    line-height: 32px;
+    font-size: 17px;
+    color: grey;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+  }
+  
+}
+
+/* 
+  ##Device = Mobiles
+  ##Screen = B/w 320px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+  .image-background {
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    background-position: right center;
+  }
+
+  .main-div {
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    right: 7%;
+}
+  
+  .title {
+    color: #bf3654;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 2em;
+  }
+  
+  .subtitle {
+    line-height: 1em;
+    width: 100%;
+    font-size: 40px;
+  }
+  
+  .description {
+    line-height: 32px;
+    font-size: 22px;
+    color: grey;
+    text-align: justify;
+  }
+  
+}

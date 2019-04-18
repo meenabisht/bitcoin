@@ -17,5 +17,4 @@ regions:
 
 libraries:
   - 'stabletheme/global-styling'
-
-
+  - 'stabletheme/slick-slider'

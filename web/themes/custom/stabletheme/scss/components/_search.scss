@@ -1,0 +1,25 @@
+.search-block-form{
+    margin-top: 40px;
+    @include respond-to(mobile){
+        display: none;
+    }
+}
+.form-search{
+    border-radius: 25px;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    width: 230px;
+    height: 15px;
+    background-image: url('http://i47.tinypic.com/r02vbq.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    img{
+        transform: rotate(90deg);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.js-form-submit{
+    visibility: hidden;
+}

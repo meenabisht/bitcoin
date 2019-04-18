@@ -9,31 +9,30 @@ class BitService{
    /**
    * @var \GuzzleHttp\Client
    */
-    protected $client;
+  protected $client;
 
     //protected $settings;
 
-    public function __construct($http_client_factory){
-        $this->client = $http_client_factory->fromOptions([
-          'base_uri' => 'http://data.fixer.io/api/',
-        ]);
-    }
+  public function __construct($http_client_factory){
+    $this->client = $http_client_factory->fromOptions([
+      'base_uri' => 'http://data.fixer.io/api/',
+    ]);
+  }
 
     // public function __construct(){
     //     $this->settings = \Drupal::config('DemoForm.settings');
     //}
 
   public function getDetails($symbols, $access_key){
-      $response = $this->client->get('latest', [
-        'query' => [
-          'access_key' => $access_key,
-          'symbols' => $symbols,
-          ]
-        ]);
-      $parsed_json = Json::decode($response->getBody());
-      return $parsed_json;
-    }
-
+    $response = $this->client->get('latest', [
+      'query' => [
+        'access_key' => $access_key,
+        'symbols' => $symbols,
+        ]
+      ]);
+    $parsed_json = Json::decode($response->getBody());
+    return $parsed_json;
+  }
 }
 
 // // "latest" endpoint - request the most recent exchange rate data

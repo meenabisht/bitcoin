@@ -1,0 +1,30 @@
+@media (min-width: $break-large) {
+	.racontent {
+		height: 622px;
+		width: 100%;
+		background-image: url("../../images/advantages.jpg");
+	}
+	// .views-view-grid {
+		
+	// 	height:100%;
+	// 	background-image: url("../../images/advantages.jpg");
+	// 	background-size: cover;
+		
+	// }
+	.racontent >div	{
+		padding-top: 3%;
+		padding-left: 7%;
+	}
+	div {
+		.views-view-grid  {
+			div {
+				&:nth-child(1) {
+			
+				}
+			}
+		}
+	} 
+	.titleser	{
+		font-weight: bold;
+	}
+}	

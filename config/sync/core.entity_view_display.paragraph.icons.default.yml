@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.icons.field_description
-    - field.field.paragraph.icons.field_icons_image
+    - field.field.paragraph.icons.field_icons
     - field.field.paragraph.icons.field_slider_title
     - paragraphs.paragraphs_type.icons
   module:
-    - image
+    - fontawesome
     - text
 id: paragraph.icons.default
 targetEntityType: paragraph
@@ -25,11 +25,13 @@ content:
   field_icons_image:
     weight: 0
     label: hidden
+  field_icons:
+    weight: 3
+    label: above
     settings:
-      image_style: ''
-      image_link: ''
+      layers: false
     third_party_settings: {  }
-    type: image
+    type: fontawesome_icon_formatter
     region: content
   field_slider_title:
     weight: 1

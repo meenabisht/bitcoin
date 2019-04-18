@@ -1,5 +1,7 @@
 <?php
+
 namespace Drupal\bitconverter\Form;
+
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Ajax\AjaxResponse;
@@ -33,15 +35,29 @@ class ConveriosnForm extends FormBase {
         ],
     ];
 
-    $form['textfields_container'] = [
-        '#type' => 'container',
-        '#attributes' => ['id' => 'textfields-container'],
+    $form['type_options1'] = [
+      '#type' => 'select',
+      '#options' => array('BITCOIN(BTC)' => t('BITCOIN(BTC)'),
+                          'BITCOINCASH(BCH)' => t('BITCOIN CASH(BCH)')),
+          '#value' => $this->t('BITCOIN(BTS)'),
     ];
+
+    $form['textfields_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['id' => 'textfields-container'],
+  ];
 
     $form['textfields_container']['display_amount'] = [
         '#type' => 'textfield',
         '#placeholder' => t('Enter Amount'),
     ];
+
+      $form['type_options2'] = [
+        '#type' => 'select',
+        '#options' => array('USDOLLAR(USD)' => t('US DOLLAR(USD)'),
+                           'INDIA(RS)' => t('INDIA(RS)')),
+            '#value' => $this->t('INDIA(RS)'),
+      ];
 
     return $form;
   }
