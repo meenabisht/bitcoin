@@ -2,22 +2,18 @@ uuid: 466efd0c-8cb6-4f21-b1da-d2d9f2404977
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:logo:fbb1457b-c57a-40a5-b15d-7e740106cd8d'
-  module:
-    - block_content
   theme:
     - stabletheme
 id: logo_2
 theme: stabletheme
 region: header
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:fbb1457b-c57a-40a5-b15d-7e740106cd8d'
 settings:
   id: 'block_content:fbb1457b-c57a-40a5-b15d-7e740106cd8d'
   label: logo
-  provider: block_content
+  provider: core
   label_display: '0'
   status: true
   info: ''

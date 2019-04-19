@@ -2,10 +2,6 @@ uuid: 80b99f6e-b88f-42b1-8a4f-ce9a8422ad8c
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:banner_bottom:8bf1e09a-4f07-47a5-bdef-fe31b205fbb9'
-  module:
-    - block_content
   theme:
     - stabletheme
 id: bannerbottom

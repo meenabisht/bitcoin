@@ -1,0 +1,33 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1023px to higher resolution desktops
+*/
+footer.footer-secondry {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: $charfamily;
+    color: $font-grey;
+
+    h2{
+        display: none;
+    }
+
+    div#block-copyright {
+        padding: 40px 0;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1023px
+*/
+@include respond-to(mobile){
+    footer.footer-secondry {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 57px;    
+    }
+}

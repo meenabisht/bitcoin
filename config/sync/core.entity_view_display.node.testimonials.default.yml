@@ -12,6 +12,7 @@ dependencies:
     - node.type.testimonials
   module:
     - fivestar
+    - fontawesome
     - image
     - text
     - user
@@ -36,13 +37,12 @@ content:
     type: string
     region: content
   field_testimonial_icon:
-    weight: 103
+    weight: 107
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      layers: false
     third_party_settings: {  }
-    type: image
+    type: fontawesome_icon_formatter
     region: content
   field_testimonial_image:
     weight: 102

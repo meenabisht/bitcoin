@@ -13,6 +13,7 @@ dependencies:
     - node.type.testimonials
   module:
     - fivestar
+    - fontawesome
     - image
     - node
     - text
@@ -164,7 +165,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-icon\">\r\n{{ field_testimonial_icon }}\r\n</div>"
+            text: "<div class = \"test-icon\">\r\n<div class = \"quote-icon\">\r\n{{ field_testimonial_icon }}\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -201,11 +202,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: icon_name
+          type: fontawesome_icon_formatter
           settings:
-            image_style: medium
-            image_link: ''
+            layers: 0
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -353,8 +353,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: "<div class = \"testimonial-rating\">\r\n{{ field_testimonial_rating__rating }} \r\n</div>"
+            alter_text: false
+            text: "<div class = \"rating\">\r\n{{ field_testimonial_rating }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false

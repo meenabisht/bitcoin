@@ -13,6 +13,7 @@ dependencies:
     - node.type.testimonials
   module:
     - fivestar
+    - fontawesome
     - image
     - path
     - text
@@ -45,12 +46,10 @@ content:
     type: string_textfield
     region: content
   field_testimonial_icon:
-    weight: 123
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    weight: 127
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: fontawesome_icon_widget
     region: content
   field_testimonial_image:
     weight: 122

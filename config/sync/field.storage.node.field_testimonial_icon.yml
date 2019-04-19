@@ -1,27 +1,16 @@
-uuid: fabdc886-3343-492d-82e0-1a965039bef8
+uuid: 6bf51538-01f1-4449-8ffb-0d2ff0160955
 langcode: en
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - fontawesome
     - node
 id: node.field_testimonial_icon
 field_name: field_testimonial_icon
 entity_type: node
-type: image
-settings:
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  target_type: file
-  display_field: false
-  display_default: false
-module: image
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
 locked: false
 cardinality: 1
 translatable: true

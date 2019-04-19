@@ -1,4 +1,4 @@
-uuid: 2770605c-9cda-49f0-8387-78deb6a6e679
+uuid: f899e397-01f7-4058-ba30-08ecf8ebee24
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_testimonial_icon
     - node.type.testimonials
   module:
-    - image
+    - fontawesome
 id: node.testimonials.field_testimonial_icon
 field_name: field_testimonial_icon
 entity_type: node
@@ -17,22 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: false
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: image
+settings: {  }
+field_type: fontawesome_icon
