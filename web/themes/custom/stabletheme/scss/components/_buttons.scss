@@ -1,4 +1,4 @@
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1023px to higher resolution desktops
 */
@@ -29,7 +29,7 @@
   }
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 767px to 1023px
 */
@@ -62,7 +62,7 @@
 }
 
 
-/* 
+/*
   ##Device = Mobiles
   ##Screen = B/w 320px to 767px
 */
@@ -93,3 +93,21 @@
     top: 30%;
   }
 }
+
+//This code belongs to me(Danish).
+ .para-slide{
+  .slide_description_wrapper{
+    .about-us{
+      margin-top: 20px;
+      a{
+        color:white;
+        text-decoration:none;
+        padding: 20px 50px;
+        font-family: bold;
+        border-radius: 34px;
+        font-size:1em;
+        @include  button-bg(#fab915, #bf3654);
+      }
+    }
+  }
+ }

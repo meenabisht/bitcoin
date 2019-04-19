@@ -9,6 +9,7 @@
         background-color: white;
         @include respond-to(mobile){
             background-color: #151719;
+            cursor: pointer;
         }
         .sub-links{
             text-decoration:none;
@@ -33,11 +34,11 @@
 @include respond-to(mobile){
     .sidebar {
         background-color: #151719;
-        width: 60%;
         height: 100%;
         position: fixed;
         top:0px;
         z-index: 1;
+        display: none;
         .sf-accordion-toggle{
             display: none;
         }
@@ -53,11 +54,31 @@
             top:0;
             position: absolute;
             z-index: 1;
+            cursor: pointer;
             .fa-bars{
                 font-size: 35px;
                 margin: 5px 0px;
+                width: 30px;
+                height: 20px;
             }
-
+            .fa-times{
+                font-size: 35px;
+                margin: 5px 0px;
+                width: 30px;
+                height: 20px;
+                display: none;
+            }
+        }
+        .toggle-btn.active {
+            .sidebar{
+                display: block;
+            }
+            .fa-bars{
+                display: none;
+            }
+            .fa-times{
+                display: block;
+            }
         }
     }
 

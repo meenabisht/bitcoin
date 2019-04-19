@@ -3,6 +3,8 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
+    @include respond-to(wide-screens){
+    }
     @include respond-to(mobile){
         margin: 0 auto;
         flex-direction: column;
@@ -19,5 +21,7 @@
             margin: 0 auto;
         }
     }
-
 }
+// #toolbar-administration{
+//     display: none;
+// }

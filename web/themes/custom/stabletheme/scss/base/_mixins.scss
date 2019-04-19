@@ -7,6 +7,14 @@
     }
   }
 
+  @mixin button-bg($color, $bg) {
+    background: $color;
+    &:hover {
+      background:($bg);
+      transition: all 0.3s ease;
+    }
+  }
+
   // //Aligns slider text
   // @mixin change-text-position($data-slick-index){
   //   @if $data-slick-index == 1 {

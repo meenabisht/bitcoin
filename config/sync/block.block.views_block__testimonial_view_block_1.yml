@@ -1,11 +1,10 @@
-uuid: 22ebe1c3-6062-4ce1-8e15-e520b9cd561d
+uuid: 62233f65-8633-4b70-bca6-e14cd4e572f5
 langcode: en
 status: false
 dependencies:
   config:
     - views.view.testimonial_view
   module:
-    - node
     - views
   theme:
     - stabletheme
@@ -22,11 +21,4 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      page: page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }

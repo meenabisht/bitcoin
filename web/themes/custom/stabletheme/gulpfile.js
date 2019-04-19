@@ -6,6 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 var styleSRC = './scss/styles.scss'
 var styleDIST = './dist/css/'
+var styleWatch = './scss/**/*.scss';
 
 function css(done){
    gulp.src( styleSRC )
@@ -24,5 +25,9 @@ function css(done){
    done()
 };
 
+function watch_files(){
+    gulp.watch(styleWatch, css);
+}
 
 gulp.task("css", css);
+gulp.task("default", watch_files);

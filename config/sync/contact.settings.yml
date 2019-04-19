@@ -1,4 +1,4 @@
-default_form: email_form
+default_form: quote_form
 flood:
   limit: 5
   interval: 3600

@@ -1,0 +1,32 @@
+uuid: 6ed27cfc-0739-4516-8d04-52def164f62f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_email_address
+    - webform.webform.newsletter
+  module:
+    - webform
+id: block_content.newsletter.field_email_address
+field_name: field_email_address
+entity_type: block_content
+bundle: newsletter
+label: Email_address
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 94e2f8b8-7110-4332-9f78-6c03fddee5de
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

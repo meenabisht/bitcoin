@@ -11,7 +11,7 @@ id: block_content.hashcoin.field_fooimage
 field_name: field_fooimage
 entity_type: block_content
 bundle: hashcoin
-label: FooterImage
+label: HashCoin
 description: ''
 required: false
 translatable: false

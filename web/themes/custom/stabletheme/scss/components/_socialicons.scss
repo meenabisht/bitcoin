@@ -12,8 +12,12 @@
             padding-top: 0.7em;
             padding-left: 0.7em;
             padding-right: 0.7em;
+            margin: 0.5em;
             height: 2em;
             cursor: pointer;
+            .svg-inline--fa.fa-w-16, .svg-inline--fa.fa-w-14{
+                width: 20px;
+            }
             &:nth-child(1):hover{
                 background-color: #507cbe;
                 .fa-facebook-f {

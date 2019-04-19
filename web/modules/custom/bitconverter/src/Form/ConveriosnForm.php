@@ -59,6 +59,10 @@ class ConveriosnForm extends FormBase {
                            'INDIA(RS)' => t('INDIA(RS)')),
             '#value' => $this->t('INDIA(RS)'),
       ];
+      $form['submit'] = array(
+        '#type' => 'button',
+        '#value' => t('submit'),
+      );
 
     return $form;
   }

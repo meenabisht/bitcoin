@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.newsletter
     - field.field.block_content.newsletter.field_description
+    - field.field.block_content.newsletter.field_email_address
   module:
     - text
+    - webform
 id: block_content.newsletter.default
 targetEntityType: block_content
 bundle: newsletter
@@ -14,9 +16,17 @@ mode: default
 content:
   field_description:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_email_address:
+    weight: 3
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
 hidden: {  }

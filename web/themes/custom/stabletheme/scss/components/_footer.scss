@@ -1,0 +1,96 @@
+.footer-primary >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    #block-views-block-recent-blogs-block-1{
+        margin-top: 210px;
+        width: 33%;
+        text-align: center;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        .news-footer-title{
+            margin: 20px;
+            a{
+                text-decoration: none;
+            }
+        }
+        .news-sub-footer{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px;
+            .authored-by{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    #block-hashcoin-2{
+        width: 33%;
+        text-align: center;
+        div{
+            margin: 20px 0px;
+        }
+        .footer-logo-label{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .footer-label{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .footer-logo{
+                order: -1;
+            }
+        }
+        .footer-description{
+            line-height: 1.5em;
+        }
+        .footer-address{
+            font-weight: bold;
+
+        }
+    }
+    #block-newsletter{
+        width: 33%;
+        text-align: center;
+        margin-top: 210px;
+        .footer-email-label{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+        .footer-email-description{
+            line-height: 1.5em;
+            margin: 20px 0px;
+        }
+        .footer-email-address{
+            input{
+                width: 60%;
+                height: 30px;
+                border-radius: 30px;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                outline:none;
+                margin: 20px 0px;
+            }
+        }
+
+    }
+}
+
+#block-views-block-recent-blogs-block-1{
+    .slick-dots{
+        button{
+            width:0;
+            height: 0;
+        }
+    }
+}

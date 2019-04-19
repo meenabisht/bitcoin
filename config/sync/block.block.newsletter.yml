@@ -1,0 +1,25 @@
+uuid: 03e65c50-582f-464b-a8af-a312d9e64165
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:newsletter:4ed0ac8d-62ec-44e1-a80b-128ee929a3aa'
+  module:
+    - block_content
+  theme:
+    - stabletheme
+id: newsletter
+theme: stabletheme
+region: footer_primary
+weight: -11
+provider: null
+plugin: 'block_content:4ed0ac8d-62ec-44e1-a80b-128ee929a3aa'
+settings:
+  id: 'block_content:4ed0ac8d-62ec-44e1-a80b-128ee929a3aa'
+  label: Newsletter
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

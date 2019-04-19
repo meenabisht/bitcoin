@@ -70,7 +70,7 @@
   border-style: none;
 }
 
-.send-link .form-text {  
+.send-link .form-text {
   height: 59px;
   text-align: center;
   border-radius: 33px;
@@ -221,14 +221,14 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
     padding: 30px;
   }
   }
-  /* 
+  /*
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 767px to 1023px
   */
   @media (min-width: 768px) and (max-width: 1023px) {
-    
+
   }
-  /* 
+  /*
     ##Device = Mobiles
     ##Screen = B/w 320px to 767px
   */
@@ -289,7 +289,7 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
       width: 78%;
       text-align: center;
       font-size: 15px;
-    } 
+    }
     .send-link .form-text {
       height: 59px;
       text-align: center;
@@ -311,12 +311,14 @@ svg.svg-inline--fa.fa-pencil-alt.fa-w-16 {
   }
 
 
-//This is my code.
+//This is my code(Danish).
 .ajax-example-simplest {
     position: relative;
     width: 100%;
     .bitcoinwrapper{
       height: 675px;
+      background-repeat: no-repeat;
+      width: 100vw;
       .currencywrap{
         display: flex;
         flex-direction: row;

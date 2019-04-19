@@ -11,14 +11,14 @@ dependencies:
 id: hashcoin_2
 theme: stabletheme
 region: footer_primary
-weight: 1
+weight: -12
 provider: null
 plugin: 'block_content:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
 settings:
   id: 'block_content:8f416cea-51b3-4b6d-bc4b-d8a1c7496bfe'
   label: 'Hash Coin'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

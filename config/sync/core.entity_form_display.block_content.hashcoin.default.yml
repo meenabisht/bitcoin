@@ -7,7 +7,6 @@ dependencies:
     - field.field.block_content.hashcoin.body
     - field.field.block_content.hashcoin.field_addre
     - field.field.block_content.hashcoin.field_fooimage
-    - field.field.block_content.hashcoin.field_title
     - image.style.thumbnail
   module:
     - image
@@ -41,14 +40,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_title:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   info:
     type: string_textfield
