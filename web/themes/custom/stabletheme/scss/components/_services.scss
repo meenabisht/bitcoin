@@ -1,22 +1,288 @@
 @media (min-width: $break-large) {
-	.racontent {
-		height: 622px;
-		width: 100%;
-		background-image: url("../../images/advantages.jpg");
+	
+	.radescription	{
+		font-size: 1.1rem;
+		color:$lightgray
 	}
-	// .views-view-grid {
-		
-	// 	height:100%;
-	// 	background-image: url("../../images/advantages.jpg");
-	// 	background-size: cover;
-		
-	// }
-	.racontent >div	{
-		padding-top: 3%;
+	#block-views-block-services-view-block-1	{
+		font-family: 'Raleway', sans-serif;
+		width:100%;
+		height: 900px;
+		background-image: url("../../images/advantages.jpg");
+		background-position: center;
+		background-size: cover;
+		position:absolute;
+		overflow:hidden;
+	}
+	.ratitle	{
+		font-weight: bold;
+		font-size: 1.5rem;
+		margin-left: 10%;
+		color:$lightblack;
+	}
+	.racontent	{
+		width:50%;
+		margin-top:17%;
+		height: 33.33%;;
+		// margin-left:10%;
+		line-height: 30px;
+		font-family: 'Raleway', sans-serif;
+	}
+	#block-views-block-services-view-block-1.svg-inline--fa  	{
+		width: 40%;
+		height:9%;
+	}
+	#block-views-block-services-view-block-1.svg-inline--fa.fa-w-10 {
+		width: 1.625em;
+		padding-left: 15%;
+  }
+ .svg-inline--fa.fa-w-11	{
+	 width: 1.625em;
+	}
+	.svg-inline--fa.fa-w-16	{
+		width: 1.625em;
+
+	}
+	.row-1	{
+ 		display: flex;
+    justify-content: space-between;
+		padding-left: 15%;
+		max-width: 88%;
+		position:relative;
+	}
+	.row-2	{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 15%;
+		position:relative;	
+	}
+	.row-3	{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 15%;
+		position:relative;
+	}
+	.row-1 > .col-1	{
 		padding-left: 7%;
 	}
-
-	.titleser	{
-		font-weight: bold;
+	.row-2 > .col-2
+	{
+		padding-left: 14%;
 	}
+	.row-3 > .col-1
+	{
+		padding-left: 7%;
+	}
+	.row-2 > .col-2 > .ratitle{
+		padding-left:1%;
+	}
+	
+	#block-views-block-services-view-block-1{
+		.fontawesome-icons{
+			svg{
+				padding-left:24%;
+				font-size: 2rem;
+		  }
+		}
+	}
+	// #block-views-block-services-view-block-1	{
+	// 	.fa-cube	{
+	// 		&:hover{
+	// 			font-size: 3rem;
+	// 		}
+
+	// 	}
+	// }
+  .row-1	{
+		.fa-cube {
+			 color:$orange;	 
+		}
+	}
+	.row-2	{
+		.col-2	{
+			.ratitle	{
+				margin-left:26%;
+			}
+		}
+	}
+	.row-2	{
+		.fa-wallet	{
+			color:$yellow;
+		}
+			
+	}
+	.row-3	{
+		.fa-lock	{
+			color: $pink;
+		}
+	}
+	.row-1	{
+		.fa-comment	{
+			color:$pink;
+		}
+	}
+	.row-2	{
+		.fa-lightbulb	{
+			color:$yellow;
+		}
+	}
+	.row-3	{
+		.fa-mobile-alt	{
+			color:$orange;
+		}
+	}
+	.row-1{
+		.col-1	{
+			.ratitle	{
+				&:hover{
+					color: $pink;
+				}
+			}
+		}
+	}
+	.row-1	{
+		.col-2	{
+			.ratitle	{
+				&:hover{
+					color: $orange;
+				}
+			}
+		}
+	}
+	.row-2	{
+		.col-1	{
+			.ratitle	{
+				&:hover	{
+					color: $yellow;;
+				}
+			}
+		}
+	}
+	.row-2	{
+		.col-2	{
+			.ratitle	{
+				&:hover	{
+					color: $yellow;
+				}
+			}
+		}
+	}
+	.row-3	{
+		.col-1	{
+			.ratitle	{
+				&:hover	{
+					color: $orange;
+				}
+			}
+		}
+	}
+
+	.row-3	{
+		.col-2	{
+			.ratitle	{
+				&:hover	{
+					color: $pink;
+				}
+			}
+		}
+	}
+
+	#block-views-block-services-view-block-1 .fontawesome-icons svg {
+		&:hover	{
+			font-size: 3rem;
+		}
+	}
+  .footer-primary	{
+		.contextual-region	{
+			position:static;
+		}
+	}
+	.banner-bottom	{
+		.contextual-region	{
+			position: static;
+		}
+	}
+}
+@media (max-width: $break-small) {
+	#block-views-block-services-view-block-1	{
+		font-family: 'Raleway', sans-serif;
+		width:100%;
+		height: 900px;
+		background-color: $background;
+		overflow:hidden;
+	}
+	// .row-1	{
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
+	#block-views-block-services-view-block-1	{
+		.views-col{
+			float: none;
+			padding-top:5%;
+		}
+	}
+	.row-1,.row-2,.row-3	{
+		div	{
+			width:100%;
+			margin-left:9%;
+
+		}
+	}
+	#block-views-block-services-view-block-1	{
+		svg	{
+			font-size:2rem;
+		}
+	}
+	#block-views-block-services-view-block-1	{
+		.ratitle	{
+			font-weight: bold;
+			padding-top: 7%;
+		}
+	}
+	.row-2	{
+		.col-2	{
+			.ratitle	{
+				margin-left:23%
+			}
+		}
+	}
+	#block-views-block-services-view-block-1	{
+		.radescription	{
+			margin-top: 4%;
+		}
+	}
+	.row-1	{
+		.fa-cube {
+			 color:$orange;	 
+		}
+	}
+	.row-1	{
+		.fa-comment	{
+			color:$pink;
+		}
+	}
+	.row-2	{
+		.fa-lightbulb{
+			color:$yellow;
+		}
+	}
+	.row-2	{
+		.fa-wallet	{
+			color:$pink;
+		}
+	}
+	.row-3	{
+		.fa-mobile-alt	{
+			color:$orange;
+		}
+	}
+	.row-3	{
+		.fa-lock	{
+			color:$pink;
+		}
+	}
+
 }	
+
+
+
