@@ -1,16 +1,23 @@
 @media (min-width: $break-large) {
-	.icon_wrapper {
-			display: flex;
-			justify-content: space-between;
-			height: 70%;
-			width: 80%;
-			margin-left: 10%;
-	}
+
 	.icon_wrapper_wrapper {
 			height: 600px;
 			width: 100%;
 			background-color: #D6DBDF;
 			padding-top: 10%;
+			
+	}
+	.icon_wrapper {
+		display: flex;
+		justify-content: space-between;
+		height: 70%;
+		width: 80%;
+		margin-left: 10%;
+    }
+	.fontawesome-icon {
+		svg.svg-inline--fa.fa-user.fa-w-14 {
+			position: relative;
+		}
 	}
 	.icons_image {
 		svg {
@@ -76,25 +83,11 @@
 			text-align: center;
 			font-size: 1.2rem;
 	}
-	.paragraph--type--services .arrow {
-			display: none;
-	}
-	.arrow {
-			width:100px;
-			
-	}
 	.fontawesome-icon {
 		margin-left:10%;
 	}
-	// .image_wrapper {
-	// 	height: 30%;
-	//   width: 20%;
-	// 	// background-image: url("../../images/round_dashed_border.png");
-	// 	// background-repeat: no-repeat;
-	// 	// background-size:cover;
-	// }
 }
-.svg-inline--fa.fa-w-14 {
+.icon_wrapper .svg-inline--fa.fa-w-14 {
 	width: 11%;
 	color: $pink;
 }
@@ -102,21 +95,11 @@
 	width: 11%;
 	color: $orange;
 }
-.svg-inline--fa.fa-w-16 {
+.icon_wrapper .svg-inline--fa.fa-w-16 {
 	width: 11%;
 	color: $yellow;
 }
-// div {
-// 	.icon_wrapper {
-// 		div {
-// 			&:nth-child(1) {
-// 					&:after {
-// 						content:url(../../images/2.png);	
-// 					}
-// 			}
-// 		}
-// 	}
-// } 
+
 @media (max-width: $break-small) {
 	.fontawesome-icon {
 		margin-left:20%;
@@ -158,9 +141,6 @@
 	.paragraph--type--icons:hover svg {
 			transform: scale(1.1, 1.1);
 			transition: 2s;
-	}
-	.paragraph--type--services .arrow {
-			display: none;
 	}
 	.icon_wrapper>div {
 			padding-top: 10%;

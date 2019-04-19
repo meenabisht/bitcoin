@@ -25,11 +25,5 @@ function stabletheme_preprocess_node(&$variables) {
         $variables['content']['testimonial'] = $testimonial_block_content;
       }
     }
-<<<<<<< HEAD
 
 }
-=======
-}
-
-
->>>>>>> master
