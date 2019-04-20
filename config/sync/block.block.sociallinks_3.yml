@@ -18,7 +18,7 @@ settings:
   id: 'block_content:bc1c318c-41a7-445a-9149-1ede66eae74a'
   label: 'Social links'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

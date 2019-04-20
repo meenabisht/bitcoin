@@ -1,0 +1,25 @@
+uuid: a6ae9ddd-9652-4cb6-b8df-1fa25cc2c04b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:623df99e-0fc2-429e-af12-b048229a290c'
+  module:
+    - block_content
+  theme:
+    - stabletheme
+id: footer
+theme: stabletheme
+region: footer_secondry
+weight: 0
+provider: null
+plugin: 'block_content:623df99e-0fc2-429e-af12-b048229a290c'
+settings:
+  id: 'block_content:623df99e-0fc2-429e-af12-b048229a290c'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
