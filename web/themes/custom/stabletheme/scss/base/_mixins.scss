@@ -7,8 +7,15 @@
     }
   }
 
-  @mixin button-bg($color, $bg) {
+  @mixin button-bg($color, $bg, $radius, $weight) {
     background: $color;
+    border-radius: $radius;
+    font-weight: $weight;
+    font-size:1em;
+    padding: 20px 50px;
+    outline: none;
+    text-align: center;
+    border-color: transparent;
     &:hover {
       background:($bg);
       transition: all 0.3s ease;

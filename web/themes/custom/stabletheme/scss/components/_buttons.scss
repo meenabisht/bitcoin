@@ -2,95 +2,105 @@
   ##Device = Desktops
   ##Screen = 1023px to higher resolution desktops
 */
-@media screen and (min-width: 1024px){
-  .main-div .join:hover {
-    background-color: orange;
-    color: white;
-  }
+// @media screen and (min-width: 1024px){
+//   .main-div .join:hover {
+//     background-color: orange;
+//     color: white;
+//   }
 
-  .main-div .join {
-    background-color: #bf3654;
-    position: relative;
-    color: white;
-    width: 30%;
-    text-align: center;
-    height: 58px;
-    font-size: 14px;
-    border-radius: 34px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 25px;
-  }
+//   .main-div .join {
+//     background-color: #bf3654;
+//     position: relative;
+//     color: white;
+//     width: 30%;
+//     text-align: center;
+//     height: 58px;
+//     font-size: 14px;
+//     border-radius: 34px;
+//     text-transform: uppercase;
+//     letter-spacing: 3px;
+//     margin-top: 25px;
+//   }
 
-  .bitcoin-join {
-    position: absolute;
-    left: 30%;
-    top: 30%;
-  }
-}
+//   .bitcoin-join {
+//     position: absolute;
+//     left: 30%;
+//     top: 30%;
+//   }
+// }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 767px to 1023px
-*/
+// /*
+//   ##Device = Tablets, Ipads (portrait)
+//   ##Screen = B/w 767px to 1023px
+// */
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main-div .join:hover {
-    background-color: orange;
-    color: white;
-  }
+// @media (min-width: 768px) and (max-width: 1023px) {
+//   .main-div .join:hover {
+//     background-color: orange;
+//     color: white;
+//   }
 
-  .main-div .join {
-    background-color: #bf3654;
-    position: relative;
-    color: white;
-    width: 30%;
-    text-align: center;
-    height: 45px;
-    font-size: 14px;
-    border-radius: 34px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 25px;
-  }
+//   .main-div .join {
+//     background-color: #bf3654;
+//     position: relative;
+//     color: white;
+//     width: 30%;
+//     text-align: center;
+//     height: 45px;
+//     font-size: 14px;
+//     border-radius: 34px;
+//     text-transform: uppercase;
+//     letter-spacing: 3px;
+//     margin-top: 25px;
+//   }
 
-  .bitcoin-join {
-    position: absolute;
-    left: 30%;
-    top: 30%;
-  }
-}
+//   .bitcoin-join {
+//     position: absolute;
+//     left: 30%;
+//     top: 30%;
+//   }
+// }
 
 
-/*
-  ##Device = Mobiles
-  ##Screen = B/w 320px to 767px
-*/
+// /*
+//   ##Device = Mobiles
+//   ##Screen = B/w 320px to 767px
+// */
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .main-div .join {
-    background-color: #bf3654;
-    color: white;
-    width: 60%;
-    text-align: center;
-    height: 51px;
-    font-size: 14px;
-    border-radius: 34px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 12px;
-  }
+// @media (min-width: 320px) and (max-width: 767px) {
+//   .main-div .join {
+//     background-color: #bf3654;
+//     color: white;
+//     width: 60%;
+//     text-align: center;
+//     height: 51px;
+//     font-size: 14px;
+//     border-radius: 34px;
+//     text-transform: uppercase;
+//     letter-spacing: 3px;
+//     margin-top: 12px;
+//   }
 
-  .main-div .join {
-    width: 60%;
-    position: relative;
-    margin-top: 25px;
-  }
+//   .main-div .join {
+//     width: 60%;
+//     position: relative;
+//     margin-top: 25px;
+//   }
 
-  .bitcoin-join {
-    position: absolute;
-    left: 30%;
-    top: 30%;
+//   .bitcoin-join {
+//     position: absolute;
+//     left: 30%;
+//     top: 30%;
+//   }
+// }
+
+.main-div {
+  .join{
+      margin-top: 30px;
+      color:white;
+      text-decoration:none;
+      width: max-content;
+      @include  button-bg($pink ,$yellow, 34px, bold);
   }
 }
 
@@ -102,12 +112,17 @@
       a{
         color:white;
         text-decoration:none;
-        padding: 20px 50px;
-        font-family: bold;
-        border-radius: 34px;
-        font-size:1em;
-        @include  button-bg(#fab915, #bf3654);
+        @include  button-bg($yellow, $pink, 34px, bold);
       }
     }
   }
+ }
+
+ .currencywrap{
+    .bitconverter_submit{
+      margin-top: 30px;
+      visibility: visible;
+      width: max-content;
+      @include  button-bg($pink, $yellow, 34px, bold);
+   }
  }

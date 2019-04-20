@@ -61,7 +61,8 @@ class ConveriosnForm extends FormBase {
       ];
       $form['submit'] = array(
         '#type' => 'button',
-        '#value' => t('submit'),
+        '#value' => t('Buy Now!'),
+        '#attributes' => array('class' => array('bitconverter_submit'))
       );
 
     return $form;

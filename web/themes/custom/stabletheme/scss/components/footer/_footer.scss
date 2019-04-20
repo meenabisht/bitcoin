@@ -8,6 +8,10 @@
     #block-views-block-recent-blogs-block-1{
         margin-top: 210px;
         width: 33%;
+        @include respond-to(mobile){
+            width: 100%;
+            margin-top: 10px;
+        }
         text-align: center;
         h2{
             font-size: 30px;
@@ -33,6 +37,9 @@
     }
     #block-hashcoin-2{
         width: 33%;
+        @include respond-to(mobile){
+            width: 100%;
+        }
         text-align: center;
         div{
             margin: 20px 0px;
@@ -61,6 +68,10 @@
         width: 33%;
         text-align: center;
         margin-top: 210px;
+        @include respond-to(mobile){
+            width: 100%;
+            margin-top: 10px;
+        }
         .footer-email-label{
             font-size: 25px;
             font-weight: bold;
@@ -88,9 +99,13 @@
 
 #block-views-block-recent-blogs-block-1{
     .slick-dots{
+        @include respond-to(mobile){
+            background-color: black;
+        }
         button{
             width:0;
             height: 0;
+
         }
     }
 }

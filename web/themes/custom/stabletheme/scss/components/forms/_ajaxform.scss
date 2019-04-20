@@ -1,0 +1,81 @@
+//This is my code(Danish).
+.ajax-example-simplest {
+    position: relative;
+    width: 100%;
+    .bitcoinwrapper{
+      height: 675px;
+      background-repeat: no-repeat;
+      width: 100vw;
+      .currencywrap{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        position: absolute;
+        left: 100px;
+        @include respond-to(mobile){
+          left: 20px;
+        }
+        .top_title{
+          top: 10px;
+          font-size: 20px;
+          color:#bf3654;
+        }
+        .block_title{
+          top: 60px;
+          font-weight: bold;
+          font-size: 30px;
+          color:black;
+        }
+        .bitcoin_description{
+          top: 150px;
+          min-width: 50%;
+          line-height: 1em;
+          font-size: 20px;
+          color: white;
+          @include respond-to(mobile){
+            width: 100%;
+          }
+        }
+        .bitcoin_description, .block_title, .top_title{
+          width: 100%;
+          margin: 20px;
+          @include respond-to(mobile){
+            left: 0;
+          }
+        }
+        #ajax-example-simplest{
+          left: 200px;
+          top: 350px;
+          display: flex;
+          flex-wrap: wrap;
+          @include respond-to(mobile){
+           margin: 0 auto;
+           left: 0;
+           max-width: 100%
+         }
+         .bitconverter_submit{
+            visibility: visible;
+            width: max-content;
+         }
+        }
+      }
+    }
+     .js-form-item-amount,.form-item-type-options2, .form-item-type-options1,.form-wrapper{
+         margin: 10px;
+         width: 40%;
+     }
+
+     #edit-amount, #edit-display-amount, #edit-type-options1, #edit-type-options2, .display_amount{
+         border-radius: 50px;
+         height: 40px;
+         font-size: 14px;
+         padding: 5px 40px;
+         text-align: center;
+         -webkit-appearance: none;
+         width: 100%;
+        box-sizing: border-box;
+     }
+}
