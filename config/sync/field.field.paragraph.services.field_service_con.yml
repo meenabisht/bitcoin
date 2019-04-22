@@ -1,18 +1,18 @@
-uuid: e629bdc8-fdc0-4244-af9e-6cdc98231166
+uuid: b76b2faa-f516-4429-8a1d-01cb70a39ac9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_services_paragraph
+    - field.storage.paragraph.field_service_con
     - paragraphs.paragraphs_type.icons
     - paragraphs.paragraphs_type.services
   module:
     - entity_reference_revisions
-id: paragraph.services.field_services_paragraph
-field_name: field_services_paragraph
+id: paragraph.services.field_service_con
+field_name: field_service_con
 entity_type: paragraph
 bundle: services
-label: 'Services Paragraph'
+label: 'service contain'
 description: ''
 required: false
 translatable: false
@@ -25,22 +25,25 @@ settings:
     target_bundles:
       icons: icons
     target_bundles_drag_drop:
+      free_quote_para:
+        weight: 8
+        enabled: false
       icon_container:
-        weight: 7
+        weight: 9
         enabled: false
       icons:
         enabled: true
-        weight: 8
-      services:
-        weight: 9
-        enabled: false
-      slider:
         weight: 10
-        enabled: false
-      testimonials:
+      recent_blog:
         weight: 11
         enabled: false
-      what_is_bitcoin:
+      services:
         weight: 12
+        enabled: false
+      slider:
+        weight: 13
+        enabled: false
+      what_is_bitcoin:
+        weight: 14
         enabled: false
 field_type: entity_reference_revisions

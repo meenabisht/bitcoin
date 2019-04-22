@@ -1,17 +1,17 @@
-uuid: f423c610-b2ac-4815-8c64-e4388846be33
+uuid: 0a3ad9d6-0177-45c3-818a-f64a3a41889c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_icons_image
-    - paragraphs.paragraphs_type.icons
+    - field.storage.paragraph.field_serviceimage
+    - paragraphs.paragraphs_type.services
   module:
     - image
-id: paragraph.icons.field_icons_image
-field_name: field_icons_image
+id: paragraph.services.field_serviceimage
+field_name: field_serviceimage
 entity_type: paragraph
-bundle: icons
-label: 'Icons Image'
+bundle: services
+label: 'service image'
 description: ''
 required: false
 translatable: false
@@ -23,7 +23,7 @@ settings:
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
+  alt_field: true
   alt_field_required: true
   title_field: false
   title_field_required: false

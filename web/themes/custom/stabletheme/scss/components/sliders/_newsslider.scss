@@ -19,8 +19,17 @@
                         text-align: center;
                         width: 360px !important;
                         margin: 25px;
+                        @include respond-to(mobile){
+                            margin: 0px;
+                        }
                         border: 1px solid black;
-
+                        .news-view{
+                            .news-icon{
+                                .fontawesome-icon{
+                                    margin: 0px;
+                                }
+                            }
+                        }
                             .news-title{
                                 padding: 20px;
                                 font-size: 20px;
@@ -53,6 +62,7 @@
                                 justify-content: space-evenly;
                                 font-size: 20px;
                                 padding: 10px;
+                                border-top: 1px solid;
                                 .news-uid{
                                     a{
                                         text-decoration: none;

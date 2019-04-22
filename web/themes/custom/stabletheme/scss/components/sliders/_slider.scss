@@ -14,8 +14,12 @@ img{
 }
 .para-slide{
     position: relative;
+    margin-bottom: -3px;
     @include respond-to(mobile){
         position: static;
+    }
+    .slick-list.draggable{
+        background-color: #333333;
     }
     .slide-image{
         img{
@@ -45,6 +49,8 @@ img{
         transform: inherit;
         top:0;
         background-color: #333333;
+        margin-top: -3px;
+        padding: 40px 0px;
     }
 
         li {

@@ -25,17 +25,14 @@ settings:
     target_bundles:
       services: services
     target_bundles_drag_drop:
-      hash_coin:
-        weight: 9
+      free_quote_para:
+        weight: 8
         enabled: false
       icons:
         weight: 10
         enabled: false
       icon_container:
         weight: 11
-        enabled: false
-      images:
-        weight: 12
         enabled: false
       recent_blog:
         weight: 13

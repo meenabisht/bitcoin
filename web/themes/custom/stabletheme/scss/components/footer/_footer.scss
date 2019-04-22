@@ -100,7 +100,7 @@
 #block-views-block-recent-blogs-block-1{
     .slick-dots{
         @include respond-to(mobile){
-            background-color: black;
+            display: none !important;
         }
         button{
             width:0;

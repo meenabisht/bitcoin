@@ -16,19 +16,18 @@
             });
 
             jQuery(document).ready(function($) {
-                // Code that uses jQuery's $ can follow here.
-                $('.views-row').slick({
-                    infinite: false,
-                    dots: true,
-                    arrows: false,
-                    fade: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    cssEase: 'linear',
-                    appendDots:$(".views-row"),
-                });
+              // Code that uses jQuery's $ can follow here.
+              $('#block-views-block-testimonial-view-block-1 .views-row-parent').slick({
+                  infinite: false,
+                  dots: true,
+                  arrows: false,
+                  fade: false,
+                  speed: 300,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  cssEase: 'linear',
+              });
             });
-
             $('.original-banner').slick({
               centerMode: true,
               centerPadding: '60px',

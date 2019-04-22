@@ -1,4 +1,4 @@
-uuid: 562c6339-15b0-4bcb-88fe-597d6b61e015
+uuid: b742bda9-5a9b-4e23-b30b-9dde506fc68d
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,18 @@ dependencies:
     - file
     - image
     - paragraphs
-id: paragraph.field_icons_image
-field_name: field_icons_image
+id: paragraph.field_serviceimage
+field_name: field_serviceimage
 entity_type: paragraph
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 4ac57ed1-6c5e-495f-8887-eaaa905effb1
+    alt: service_image
     title: ''
-    width: null
-    height: null
+    width: 1920
+    height: 900
   target_type: file
   display_field: false
   display_default: false

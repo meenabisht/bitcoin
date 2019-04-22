@@ -5,30 +5,33 @@
 			width: 100%;
 			background-color: #D6DBDF;
 			padding-top: 10%;
+			.icon_wrapper {
+				display: flex;
+				justify-content: space-between;
+				height: 70%;
+				width: 80%;
+				margin-left: 10%;
+				.icons_image {
+					svg {
+						height: 30%;
+						width: 20%;
+						border-radius: 50%;
+						background-size: cover;
+						margin-left: 20%;
+						padding: 15%;
+						border: 2px dotted gray;
+					}
+					.fontawesome-icon {
+							margin-left:10%;
+						svg.svg-inline--fa.fa-user.fa-w-14 {
+							position: relative;
+						}
+					}
+				}
+			}
 	}
-	.icon_wrapper {
-		display: flex;
-		justify-content: space-between;
-		height: 70%;
-		width: 80%;
-		margin-left: 10%;
-    }
-	.fontawesome-icon {
-		svg.svg-inline--fa.fa-user.fa-w-14 {
-			position: relative;
-		}
-	}
-	.icons_image {
-		svg {
-			height: 30%;
-			width: 20%;
-			border-radius: 50%;
-			background-size: cover;
-			margin-left: 20%;
-			padding: 15%;
-			border: 2px dotted gray;
-		}
-	}
+
+
 	.title {
 			font-weight: bold;
 			text-align: center;
@@ -82,9 +85,6 @@
 			text-align: center;
 			font-size: 1.2rem;
 	}
-	.fontawesome-icon {
-		margin-left:10%;
-	}
 }
 .icon_wrapper .svg-inline--fa.fa-w-14 {
 	width: 11%;
@@ -100,19 +100,32 @@
 }
 
 @media (max-width: $break-small) {
-	.fontawesome-icon {
-		margin-left:20%;
-	}
 	.icon_wrapper_wrapper {
 			height: auto;
 			width: 100%;
 			background-color: #D6DBDF;
 			padding-bottom: 10%;
+			.icons_image {
+				.fontawesome-icon {
+					margin-left:20%;
+				}
+				svg {
+					height: 30%;
+					width: 20%;
+					border-radius: 50%;
+					margin-left: 18%;
+					padding: 15%;
+					border: 2px dotted gray;
+				}
+			}
 	}
 	.icon_wrapper {
 			margin-left: 20%;
 			height: 90%;
 			width: 60%;
+		.paragraph--type--icons {
+			margin-top: 10%;
+		}
 	}
 	.title {
 			font-weight: bold;
@@ -123,19 +136,6 @@
 	.description {
 			text-align: center;
 			font-size: 1.2rem;
-	}
-	.paragraph--type--icons {
-			margin-top: 10%;
-	}
-	.icons_image {
-		svg {
-			height: 30%;
-			width: 20%;
-			border-radius: 50%;
-			margin-left: 18%;
-			padding: 15%;
-			border: 2px dotted gray;
-		}
 	}
 	.paragraph--type--icons:hover svg {
 			transform: scale(1.1, 1.1);
