@@ -1,10 +1,9 @@
 (function ($, Drupal){
     Drupal.behaviors.stabletheme = {
         attach: function (context, settings) {
-
+            console.log(settings);
             jQuery(document).ready(function($) {
                 // Code that uses jQuery's $ can follow here.
-                console.log('hello');
                 $('.para-slide').slick({
                         infinite: false,
                         dots: true,
@@ -63,6 +62,32 @@
           // $('.toggle-menu').on('click', function (){
           //   $('.sub-menu').animate({width: 'toggle'}, 1000);
           //   $('sub-menu').toggleClass("display-menu");
+          //onscroll
+          // window.onscroll = function() {myFunction()};
+          //   var header = document.getElementById("menu");
+          //   var sticky = header.offsetTop;
+
+          //   function myFunction() {
+          //     if (window.pageYOffset > sticky) {
+          //       header.classList.add("sticky");
+          //     } else {
+          //       header.classList.remove("sticky");
+          //     }
+          //   }
+
+          var sticky = $('.menu').offset().top;
+          var viewportWidth = $(window).width();
+          if(viewportWidth > 1024 ){
+            $(window).on('scroll', function(){
+              console.log(window.pageYOffset);
+              if (window.pageYOffset > sticky) {
+                $('.menu').addClass("sticky");
+              } else {
+                $('.menu').removeClass("sticky");
+              }
+            });
+          }
+
           // });
 
         }

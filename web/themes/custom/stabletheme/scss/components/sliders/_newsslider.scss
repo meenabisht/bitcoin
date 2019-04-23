@@ -2,6 +2,10 @@
 #block-views-block-news-and-events-block-1-2{
     max-width: 1211px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 40px;
     h2{
         font-size: 40px;
         font-weight: bold;
@@ -20,7 +24,7 @@
                         width: 360px !important;
                         margin: 25px;
                         @include respond-to(mobile){
-                            margin: 0px;
+                            margin: 10px;
                         }
                         border: 1px solid black;
                         .news-view{
