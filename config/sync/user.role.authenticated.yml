@@ -18,3 +18,8 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'view paragraph content icon_container'
+  - 'view paragraph content icons'
+  - 'view paragraph content services'
+  - 'view paragraph content slider'
+  - 'view paragraph content what_is_bitcoin'
