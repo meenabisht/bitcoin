@@ -59,6 +59,11 @@ class ConveriosnForm extends FormBase {
                            'INDIA(RS)' => t('INDIA(RS)')),
             '#value' => $this->t('INDIA(RS)'),
       ];
+      $form['submit'] = array(
+        '#type' => 'button',
+        '#value' => t('Buy Now!'),
+        '#attributes' => array('class' => array('bitconverter_submit'))
+      );
 
     return $form;
   }

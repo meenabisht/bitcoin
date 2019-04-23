@@ -22,9 +22,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_icons_image:
-    weight: 0
-    label: hidden
   field_icons:
     weight: 3
     label: above

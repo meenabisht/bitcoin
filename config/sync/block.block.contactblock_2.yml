@@ -1,4 +1,4 @@
-uuid: 0479ffa8-0480-475c-968c-d1afd6edc55a
+uuid: a22782c9-c480-4f2c-a667-d4ec3c5a5145
 langcode: en
 status: true
 dependencies:
@@ -18,6 +18,6 @@ settings:
   id: contact_block
   label: 'Contact block'
   provider: contact_block
-  label_display: visible
+  label_display: '0'
   contact_form: quote_form
 visibility: {  }

@@ -14,13 +14,18 @@ img{
 }
 .para-slide{
     position: relative;
+    margin-bottom: -3px;
     @include respond-to(mobile){
         position: static;
+    }
+    .slick-list.draggable{
+        background-color: #333333;
     }
     .slide-image{
         img{
             max-width: 100%;
             height: 675px;
+            width: 100vw;
             @include respond-to(mobile){
                 height: 330px;;
             }
@@ -44,6 +49,8 @@ img{
         transform: inherit;
         top:0;
         background-color: #333333;
+        margin-top: -3px;
+        padding: 40px 0px;
     }
 
         li {
@@ -138,9 +145,7 @@ img{
             transform: translate3d(0, 0, 0);
         }
     }
-#toolbar-administration{
-    display: none;
-}
+
 
     // .slide_description{
     //     [data-slick-index="0"]{

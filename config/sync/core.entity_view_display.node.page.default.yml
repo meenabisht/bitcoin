@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_free
     - field.field.node.page.field_para_icon
     - field.field.node.page.field_para_service
     - field.field.node.page.field_slider
@@ -12,7 +11,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-    - webform
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -25,14 +23,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_free:
-    weight: 102
-    label: above
-    settings:
-      source_entity: true
-    third_party_settings: {  }
-    type: webform_entity_reference_entity_view
-    region: content
   field_para_icon:
     type: entity_reference_revisions_entity_view
     weight: 4

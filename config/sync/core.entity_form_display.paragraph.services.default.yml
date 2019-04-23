@@ -1,10 +1,10 @@
-uuid: 18d60d3f-fea6-49a9-af44-c56e9c13ecc8
+uuid: c678a042-ee64-43f1-87ad-8385424da569
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services.field_image
-    - field.field.paragraph.services.field_services_paragraph
+    - field.field.paragraph.services.field_service_con
+    - field.field.paragraph.services.field_serviceimage
     - image.style.thumbnail
     - paragraphs.paragraphs_type.services
   module:
@@ -15,15 +15,7 @@ targetEntityType: paragraph
 bundle: services
 mode: default
 content:
-  field_image:
-    weight: 1
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_services_paragraph:
+  field_service_con:
     type: entity_reference_paragraphs
     weight: 0
     settings:
@@ -34,6 +26,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_serviceimage:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
 hidden:
   created: true

@@ -2,8 +2,6 @@ uuid: d2ba64c2-8b68-4528-8f9f-e6049494e66c
 langcode: en
 status: false
 dependencies:
-  module:
-    - node
   theme:
     - stabletheme
 _core:
@@ -11,7 +9,7 @@ _core:
 id: stabletheme_page_title
 theme: stabletheme
 region: content
-weight: -10
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -19,11 +17,4 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      services: services
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }

@@ -1,10 +1,10 @@
-uuid: f3b6d44d-356e-41ed-a79d-43a587535e5c
+uuid: 06a2a6c0-73b4-41a2-9d8d-aa1e873a1252
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services.field_image
-    - field.field.paragraph.services.field_services_paragraph
+    - field.field.paragraph.services.field_service_con
+    - field.field.paragraph.services.field_serviceimage
     - paragraphs.paragraphs_type.services
   module:
     - entity_reference_revisions
@@ -14,16 +14,7 @@ targetEntityType: paragraph
 bundle: services
 mode: default
 content:
-  field_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_services_paragraph:
+  field_service_con:
     type: entity_reference_revisions_entity_view
     weight: 1
     label: hidden
@@ -31,5 +22,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_serviceimage:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
 hidden: {  }

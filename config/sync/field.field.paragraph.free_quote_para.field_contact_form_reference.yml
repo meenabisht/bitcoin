@@ -1,0 +1,23 @@
+uuid: 915cb318-1b86-4a38-ab1c-7c3134007459
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_form_reference
+    - paragraphs.paragraphs_type.free_quote_para
+id: paragraph.free_quote_para.field_contact_form_reference
+field_name: field_contact_form_reference
+entity_type: paragraph
+bundle: free_quote_para
+label: 'Contact form Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:contact_form'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

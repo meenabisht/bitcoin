@@ -1,4 +1,4 @@
-uuid: 5864af2d-5511-49cd-b422-e8c8bf039e34
+uuid: 10a794b9-e2ef-4fb1-bc4b-131aef6ae4b3
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: paragraph.icons.field_icons
 field_name: field_icons
 entity_type: paragraph
 bundle: icons
-label: 'Icons Image'
+label: icons
 description: ''
 required: false
 translatable: false

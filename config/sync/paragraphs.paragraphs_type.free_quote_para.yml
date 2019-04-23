@@ -1,0 +1,9 @@
+uuid: d807904b-d4e2-4aac-a1a3-072a14527c47
+langcode: en
+status: true
+dependencies: {  }
+id: free_quote_para
+label: 'Free Quote Para'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

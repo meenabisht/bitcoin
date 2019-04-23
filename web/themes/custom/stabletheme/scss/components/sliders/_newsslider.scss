@@ -1,6 +1,11 @@
 /*News and Events slider*/
 #block-views-block-news-and-events-block-1-2{
-    padding: 100px;
+    max-width: 1211px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 40px;
     h2{
         font-size: 40px;
         font-weight: bold;
@@ -18,8 +23,17 @@
                         text-align: center;
                         width: 360px !important;
                         margin: 25px;
+                        @include respond-to(mobile){
+                            margin: 10px;
+                        }
                         border: 1px solid black;
-
+                        .news-view{
+                            .news-icon{
+                                .fontawesome-icon{
+                                    margin: 0px;
+                                }
+                            }
+                        }
                             .news-title{
                                 padding: 20px;
                                 font-size: 20px;
@@ -37,6 +51,8 @@
                                 box-shadow: 0px 0px 2px #888;
                                 background-color: #f58770;
                                 padding: 0.5em 0.6em;
+                                position: static;
+                                width: 30px;
                                 &:hover{
                                     background-color: #fab915;
                                 }
@@ -50,6 +66,7 @@
                                 justify-content: space-evenly;
                                 font-size: 20px;
                                 padding: 10px;
+                                border-top: 1px solid;
                                 .news-uid{
                                     a{
                                         text-decoration: none;

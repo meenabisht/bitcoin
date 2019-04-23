@@ -1,10 +1,9 @@
 uuid: d9183701-0457-4e2a-9399-aeb65f0f8a40
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - field.storage.node.body
-<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
     - field.storage.node.field_first_name
     - field.storage.node.field_testimonial_icon
     - field.storage.node.field_testimonial_image
@@ -12,10 +11,6 @@ dependencies:
     - field.storage.node.field_testimonial_rating
     - image.style.medium
     - node.type.testimonials
-=======
-    - field.storage.node.field_main_image
-    - node.type.news_events
->>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
   module:
     - fivestar
     - image
@@ -81,16 +76,11 @@ display:
             offset: false
             offset_label: Offset
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       fields:
@@ -105,7 +95,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-image\">\r\n{{ field_testimonial_image }}\r\n</div>"
+            text: "<div class = \"image-test\">\r\n{{ field_testimonial_image }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -157,7 +147,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
           plugin_id: field
         field_testimonial_icon:
           id: field_testimonial_icon
@@ -170,7 +159,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-icon\">\r\n{{ field_testimonial_icon }}\r\n</div>"
+            text: "<div class =\"test-quote\">\r\n<div class = \"icon-test\">\r\n{{ field_testimonial_icon }}\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -227,12 +216,6 @@ display:
           id: field_first_name
           table: node__field_first_name
           field: field_first_name
-=======
-        field_main_image:
-          id: field_main_image
-          table: node__field_main_image
-          field: field_main_image
->>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
           relationship: none
           group_type: group
           admin_label: ''
@@ -240,7 +223,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-first\">\r\n{{ field_first_name }}\r\n</div>"
+            text: "<div class = \"first-test\">\r\n{{ field_first_name }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -303,7 +286,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-last\">\r\n{{ field_testimonial_last_name }}\r\n</div>"
+            text: "<div class = \"last-test\">\r\n{{ field_testimonial_last_name }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -365,8 +348,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: "<div class = \"testimonial-rating\">\r\n{{ field_testimonial_rating__rating }} \r\n</div>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -431,7 +414,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class = \"testimonial-body\">\r\n{{ body }} \r\n</div>"
+            text: "<div class = \"body-test\">\r\n{{ body }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -515,6 +498,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: views-row-parent
     cache_metadata:
       max-age: -1
       contexts:
@@ -525,15 +509,11 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_testimonial_icon'
         - 'config:field.storage.node.field_testimonial_image'
         - 'config:field.storage.node.field_testimonial_last_name'
         - 'config:field.storage.node.field_testimonial_rating'
-=======
-        - 'config:field.storage.node.field_main_image'
->>>>>>> config export for news events:config/sync/views.view.xyz_test.yml
   block_1:
     display_plugin: block
     id: block_1
@@ -551,12 +531,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-<<<<<<< HEAD:config/sync/views.view.testimonial_view.yml
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_testimonial_icon'
         - 'config:field.storage.node.field_testimonial_image'
         - 'config:field.storage.node.field_testimonial_last_name'
         - 'config:field.storage.node.field_testimonial_rating'
-=======
-        - 'config:field.storage.node.field_main_image'
->>>>>>> config export for news events:config/sync/views.view.xyz_test.yml

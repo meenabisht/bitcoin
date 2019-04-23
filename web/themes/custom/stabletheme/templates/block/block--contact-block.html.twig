@@ -1,0 +1,51 @@
+<div class = "free-main">
+  <div class="freeimage" style="background-image: url('{{ file_url(content.field_free_image.widget.0.preview['#uri']) }}');">
+
+  <div class = "container">
+    <div class = "freetitle">
+      <div class = "free-subtitle">
+        {{ content.field_free_subtitle.widget.0.value['#default_value'] }}
+      </div>
+      <div class = "free-title">
+        {{ content.field_free_title.widget.0.value['#default_value'] }}
+      </div>
+    </div>
+
+    <div class = "contact-form">
+
+      <div class = "contact-wrapper">
+
+        <div class = "free-name">
+          <div class = "free-icon">
+          <i class="far fa-user"></i>
+          </div>
+            {{ content.field_full_name }}
+        </div>
+        <div class = "free-address">
+          <div class = "icon-address">
+          <i class="far fa-envelope"></i>
+          </div>
+          {{ content.field_address }}
+        </div>
+        <div class = "free-subject">
+          <div class = "icon-subject">
+          <i class="fas fa-paperclip"></i>
+          </div>
+          {{ content.field_your_subject }}
+        </div>
+         <div class = "free-question">
+          <div class = "icon-question">
+          <i class="fas fa-pencil-alt"></i>
+          </div>
+          {{ content.field_your_question }}
+        </div>
+        <div class = "send-link">
+      {{ content.field_send_link.widget.0.title }}
+    </div>
+      </div>
+    </div>
+
+      </div>
+
+  </div>
+</div>

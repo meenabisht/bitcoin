@@ -1,0 +1,28 @@
+uuid: 19ecf4ab-b9f8-4fcc-8366-8ba626521051
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.quote_form
+    - field.storage.contact_message.field_send_link
+  module:
+    - link
+id: contact_message.quote_form.field_send_link
+field_name: field_send_link
+entity_type: contact_message
+bundle: quote_form
+label: 'Send Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://webdesign-finder.com/html/hashcoin/'
+    title: 'Send Now'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

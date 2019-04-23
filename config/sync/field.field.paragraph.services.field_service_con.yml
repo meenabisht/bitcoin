@@ -1,0 +1,49 @@
+uuid: b76b2faa-f516-4429-8a1d-01cb70a39ac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_con
+    - paragraphs.paragraphs_type.icons
+    - paragraphs.paragraphs_type.services
+  module:
+    - entity_reference_revisions
+id: paragraph.services.field_service_con
+field_name: field_service_con
+entity_type: paragraph
+bundle: services
+label: 'service contain'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icons: icons
+    target_bundles_drag_drop:
+      free_quote_para:
+        weight: 8
+        enabled: false
+      icon_container:
+        weight: 9
+        enabled: false
+      icons:
+        enabled: true
+        weight: 10
+      recent_blog:
+        weight: 11
+        enabled: false
+      services:
+        weight: 12
+        enabled: false
+      slider:
+        weight: 13
+        enabled: false
+      what_is_bitcoin:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
